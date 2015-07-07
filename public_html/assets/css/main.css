@@ -232,42 +232,45 @@ header .menu-row .option-menu{
 }
 
 .lets-start-info button {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  position: relative;
-  background-color: #013b33;
-  border: none;
-  font-size: 2.4rem;
-  padding-left: 5rem;
-  margin-left: 4rem;
-  padding-right: 2rem;
-  white-space: nowrap;
-  border-radius: 0.5rem;
-  outline: 0;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    position: relative;
+    background-color: #013b33;
+    border: none;
+    font-size: 2.4rem;
+    padding-left: 5rem;
+    margin-left: 4rem;
+    padding-right: 2rem;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .lets-start-info button:before {
-  content: '';
-  position: absolute;
-  box-sizing: content-box;
-  top: -1rem;
-  left: -2.5rem;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 5rem;
-  border: 0.5rem solid #ffc001;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  background-image: url(../img/icons/lets-explore.svg), url(../img/buttons/circle/forest.svg);
-  -webkit-animation: pulsate 1s ease-in-out alternate infinite;
-  animation: pulsate 1s ease-in-out alternate infinite;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+    content: '';
+    position: absolute;
+    box-sizing: content-box;
+    top: -1rem;
+    left: -2.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    border: 0.5rem solid #ffc001;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../img/icons/lets-explore.svg), url(../img/buttons/circle/forest.svg);
+    -webkit-animation: pulsate 1s ease-in-out alternate infinite;
+    animation: pulsate 1s ease-in-out alternate infinite;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
 }
