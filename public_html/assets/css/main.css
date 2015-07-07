@@ -195,6 +195,14 @@ header .menu-row .option-menu{
     /* width: 10px; */
 }
 
+header .dropdown .dropdown-menu{
+    min-width: 0px;
+    background: #000;
+}
+.dropdown-menu>li>a {
+    color: #fff;
+}
+
 /**********************     Footer     ***********************/
 
 .lets-start-info{
