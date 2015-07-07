@@ -9,22 +9,95 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style> -->
+
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div>
-            
+        <!-- Fixed navbar -->
+        <header>
+            <div class="sena-header">
+                <div class="sena-logo">
+                    <img src="assets/img/sena-logo.svg">
+                </div>
+                <div class="header-row">
+                    <div class="flex">
+                        <div class="title">
+                            Let's Start!&nbsp;
+                        </div>
+                        <div class="sub-title">
+                            Looking for a job
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="hidden-xs">
+                            <ol class="lesson-path list-inline">
+                                <li>English <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
+                                <li>Level A1.1 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
+                                <li>At The Coffee Shop</li>
+                            </ol>
+                        </div>
+                        <button class="option-menu">
+                            ...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Begin page content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 centering max-xs-image">
+                    <img src="assets/img/now_hiring.png" draggable="false">
+                </div>
+                <div class="col-sm-6 centering hidden-xs">
+                    <img src="assets/img/jobs.png" draggable="false">
+                </div>
+            </div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <footer class="footer">
+            <div class="container-fluid lets-start-info">
+                <div class="row">
+                    <section class="col-sm-5">
+                        <h3>Learning Outcomes</h3>
+                        <ul>
+                            <li>I can talk about types of coffee.</li>
+                            <li>I can use ordinal numbers to talk about the order of items.</li>
+                            <li>I can ask the price and order things in a coffee shop.</li>
+                            <li>I can use adverbs of frequency.</li>
+                        </ul>
+                    </section>
+                    <section class="col-sm-4">
+                        <h3>Discuss with your partner…</h3>
+                        <ul>
+                            <li>Do you drink coffee? Why or why not?</li>
+                            <li>Make a list of different types of coffee.</li>
+                            <li>Discuss how they are different.</li>
+                        </ul>
+                    </section>
+                    <div class="col-sm-3">
+                        <button class="button-lets-explore">Let's Explore</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

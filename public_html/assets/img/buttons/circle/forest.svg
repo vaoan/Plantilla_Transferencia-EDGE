@@ -1,0 +1,52 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="92px" height="92px" viewBox="0 0 92 92">
+<defs>
+<radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="74.90195362105051" fx="23.731715686274512" fy="15.767254901960786" gradientTransform="matrix( 0.8329222000755208, 0.5533901052795887, -0.5962795072870839, 0.8980072848339765, 51.95,18.3) " spreadMethod="pad">
+<stop  offset="0.7843137254901961%" stop-color="#000000" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#000000" stop-opacity="0.7098039215686275"/>
+
+<stop  offset="100%" stop-color="#000000" stop-opacity="0.21176470588235294"/>
+</radialGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="46.125" y1="49.550000000000004" x2="43.974999999999994" y2="-32.050000000000004" spreadMethod="pad">
+<stop  offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#FFFFFF" stop-opacity="0.7098039215686275"/>
+
+<stop  offset="100%" stop-color="#000000" stop-opacity="0.21176470588235294"/>
+</linearGradient>
+
+<g id="Layer3_0_FILL">
+<path fill="#007B70" stroke="none" d="
+M 78.15 13.35
+Q 64.75 0 45.8 0 26.9 0 13.5 13.35 0.05 26.75 0.05 45.65 0.05 64.65 13.5 77.95 26.9 91.35 45.8 91.35 64.75 91.35 78.15 77.95 91.55 64.65 91.55 45.65 91.55 26.75 78.15 13.35 Z"/>
+</g>
+
+<g id="colrisimo_0_Layer0_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 98.7 49.35
+Q 98.7 28.95 84.25 14.45 69.8 0 49.4 0 28.95 0 14.45 14.45 0 28.95 0 49.35 0 69.8 14.45 84.25 28.95 98.7 49.4 98.7 69.8 98.7 84.25 84.25 98.7 69.8 98.7 49.35 Z"/>
+</g>
+
+<g id="Layer1_0_FILL">
+<path fill="url(#Gradient_2)" stroke="none" d="
+M 70.55 48.8
+Q 78.5 42.3 80.1 33.6 80.45 31.35 80.45 29.1 80.45 22.95 77.65 17.8 75.45 14.55 72.25 11.65 61.5 2 46.4 2 31.25 2 20.45 11.65 17.9 13.95 15.95 16.55 12.9 21.4 12.5 27.2 12.45 28.15 12.45 29.1 12.45 40.65 22.35 48.8 32.35 57 46.45 57 60.55 57 70.55 48.8 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1.005462646484375, 0, 0, 1.007110595703125, -0.05,0) ">
+<use xlink:href="#Layer3_0_FILL"/>
+</g>
+
+<g transform="matrix( 0.932037353515625, 0, 0, 0.932037353515625, 0,0) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#colrisimo_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer1_0_FILL"/>
+</g>
+</svg>
