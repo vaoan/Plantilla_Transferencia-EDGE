@@ -1428,3 +1428,53 @@
 [0729/113943:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
 [0729/113943:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
 [0729/114018:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/133247:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/133253:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/133259:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/142402:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/142818:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/142850:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/142851:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/142851:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151256:ERROR:gl_surface_egl.cc(133)] eglInitialize failed with error UNKNOWN
+[0729/151256:ERROR:gl_surface_win.cc(97)] GLSurfaceEGL::InitializeOneOff failed.
+[0729/151318:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0729/151320:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0729/151326:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0729/151401:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151401:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151401:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151410:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151410:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151410:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151420:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0729/151420:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0729/151433:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151433:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151434:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151434:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151434:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151434:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151459:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151459:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151459:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151459:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151459:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151459:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151506:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151506:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151506:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151506:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151506:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151750:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151750:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151750:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0729/151753:INFO:CONSOLE(1)] "ReferenceError: EdgeDOM is not defined
+    at eval (eval at <anonymous> (about:blank:0:45), <anonymous>:1:7)
+    at about:blank:0:45", source:  (1)
+[0729/151754:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0729/151801:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151804:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151804:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151804:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
+[0729/151804:INFO:CONSOLE(22)] "maxExposableOverlayWidth()=1055maxExposableOverlayHeight()=546", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/edge_includes/an.canvas.overlay.min.js (22)
