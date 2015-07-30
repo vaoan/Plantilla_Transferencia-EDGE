@@ -1463,9 +1463,14 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_info}", "click", function (sym, e) {
             // poup de informaccion
             // Mostrar un elemento 
-            sym.getComposition().getStage().$("contenedor_popup").show();
-
-
+            // Plantilla creada
+            $.trigger({
+                type: "EDGE_Plantilla_click",
+                sym: sym,
+                evt: e
+            });
+            
+            //console.log(e);
         });
         //Edge binding end
 
