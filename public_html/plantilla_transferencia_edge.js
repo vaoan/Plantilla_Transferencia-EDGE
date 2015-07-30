@@ -20,7 +20,7 @@
             js+"jquery-ui-1.11.4.custom/jquery-ui.min.js",
             js+"jquery.fullscreen-0.5.0/jquery.fullscreen.min.js",
             js+"ion.sound-3.0.5/js/ion.sound.min.js",
-            js+"plantilla/main.js"
+            "files/plantilla/main.js"
         ],
         symbols = {
             "stage": {
