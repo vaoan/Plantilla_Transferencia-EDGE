@@ -963,16 +963,17 @@
 
         Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function (sym, e) {
             // Plantilla creada
+            //*
             $("body").trigger({
                 type: "EDGE_Container_loaded",
                 sym: sym
-            });
+            });//*/
 
         });
         //Edge binding end
 
     })("stage");
-    //Edge symbol end:'stage'
+   //Edge symbol end:'stage'
 
     //=========================================================
 
@@ -980,7 +981,7 @@
     (function (symbolName) {
 
     })("home");
-    //Edge symbol end:'home'
+   //Edge symbol end:'home'
 
     //=========================================================
 
@@ -988,7 +989,7 @@
     (function (symbolName) {
 
     })("libros");
-    //Edge symbol end:'libros'
+   //Edge symbol end:'libros'
 
     //=========================================================
 
@@ -996,7 +997,7 @@
     (function (symbolName) {
 
     })("libroA");
-    //Edge symbol end:'libroA'
+   //Edge symbol end:'libroA'
 
     //=========================================================
 
@@ -1004,7 +1005,7 @@
     (function (symbolName) {
 
     })("mapa");
-    //Edge symbol end:'mapa'
+   //Edge symbol end:'mapa'
 
     //=========================================================
 
@@ -1017,7 +1018,7 @@
         //Edge binding end
 
     })("leyendo");
-    //Edge symbol end:'leyendo'
+   //Edge symbol end:'leyendo'
 
     //=========================================================
 
@@ -1025,7 +1026,7 @@
     (function (symbolName) {
 
     })("sol");
-    //Edge symbol end:'sol'
+   //Edge symbol end:'sol'
 
     //=========================================================
 
@@ -1033,7 +1034,7 @@
     (function (symbolName) {
 
     })("papelera");
-    //Edge symbol end:'papelera'
+   //Edge symbol end:'papelera'
 
     //=========================================================
 
@@ -1041,7 +1042,7 @@
     (function (symbolName) {
 
     })("pensar");
-    //Edge symbol end:'pensar'
+   //Edge symbol end:'pensar'
 
     //=========================================================
 
@@ -1049,7 +1050,7 @@
     (function (symbolName) {
 
     })("docum");
-    //Edge symbol end:'docum'
+   //Edge symbol end:'docum'
 
     //=========================================================
 
@@ -1057,7 +1058,7 @@
     (function (symbolName) {
 
     })("hablar");
-    //Edge symbol end:'hablar'
+   //Edge symbol end:'hablar'
 
     //=========================================================
 
@@ -1065,7 +1066,7 @@
     (function (symbolName) {
 
     })("pdf");
-    //Edge symbol end:'pdf'
+   //Edge symbol end:'pdf'
 
     //=========================================================
 
@@ -1080,7 +1081,7 @@
         //Edge binding end
 
     })("tool_btn1");
-    //Edge symbol end:'tool_btn1'
+   //Edge symbol end:'tool_btn1'
 
     //=========================================================
 
@@ -1088,7 +1089,7 @@
     (function (symbolName) {
 
     })("tooltipMov");
-    //Edge symbol end:'tooltipMov'
+   //Edge symbol end:'tooltipMov'
 
     //=========================================================
 
@@ -1103,7 +1104,7 @@
         //Edge binding end
 
     })("tooltip_btn2");
-    //Edge symbol end:'tooltip_btn2'
+   //Edge symbol end:'tooltip_btn2'
 
     //=========================================================
 
@@ -1111,7 +1112,7 @@
     (function (symbolName) {
 
     })("tooltipMov2");
-    //Edge symbol end:'tooltipMov2'
+   //Edge symbol end:'tooltipMov2'
 
     //=========================================================
 
@@ -1126,7 +1127,7 @@
         //Edge binding end
 
     })("tootip_btn3");
-    //Edge symbol end:'tootip_btn3'
+   //Edge symbol end:'tootip_btn3'
 
     //=========================================================
 
@@ -1134,7 +1135,7 @@
     (function (symbolName) {
 
     })("tooltipMov3");
-    //Edge symbol end:'tooltipMov3'
+   //Edge symbol end:'tooltipMov3'
 
     //=========================================================
 
@@ -1149,7 +1150,7 @@
         //Edge binding end
 
     })("tooltip_btn4");
-    //Edge symbol end:'tooltip_btn4'
+   //Edge symbol end:'tooltip_btn4'
 
     //=========================================================
 
@@ -1157,7 +1158,7 @@
     (function (symbolName) {
 
     })("tooltipMov4");
-    //Edge symbol end:'tooltipMov4'
+   //Edge symbol end:'tooltipMov4'
 
     //=========================================================
 
@@ -1172,7 +1173,7 @@
         //Edge binding end
 
     })("tooltip_bnt5");
-    //Edge symbol end:'tooltip_bnt5'
+   //Edge symbol end:'tooltip_bnt5'
 
     //=========================================================
 
@@ -1180,7 +1181,7 @@
     (function (symbolName) {
 
     })("tooltipMov5");
-    //Edge symbol end:'tooltipMov5'
+   //Edge symbol end:'tooltipMov5'
 
     //=========================================================
 
@@ -1195,7 +1196,7 @@
         //Edge binding end
 
     })("tooltip_btn6");
-    //Edge symbol end:'tooltip_btn6'
+   //Edge symbol end:'tooltip_btn6'
 
     //=========================================================
 
@@ -1203,7 +1204,7 @@
     (function (symbolName) {
 
     })("tooltipMov6");
-    //Edge symbol end:'tooltipMov6'
+   //Edge symbol end:'tooltipMov6'
 
     //=========================================================
 
@@ -1218,7 +1219,7 @@
         //Edge binding end
 
     })("tool_Home");
-    //Edge symbol end:'tool_Home'
+   //Edge symbol end:'tool_Home'
 
     //=========================================================
 
@@ -1226,7 +1227,7 @@
     (function (symbolName) {
 
     })("tool_homeMov");
-    //Edge symbol end:'tool_homeMov'
+   //Edge symbol end:'tool_homeMov'
 
     //=========================================================
 
@@ -1241,7 +1242,7 @@
         //Edge binding end
 
     })("tool_libros");
-    //Edge symbol end:'tool_libros'
+   //Edge symbol end:'tool_libros'
 
     //=========================================================
 
@@ -1249,7 +1250,7 @@
     (function (symbolName) {
 
     })("tool_librosMov");
-    //Edge symbol end:'tool_librosMov'
+   //Edge symbol end:'tool_librosMov'
 
     //=========================================================
 
@@ -1264,7 +1265,7 @@
         //Edge binding end
 
     })("tooltip_librosA");
-    //Edge symbol end:'tooltip_librosA'
+   //Edge symbol end:'tooltip_librosA'
 
     //=========================================================
 
@@ -1272,7 +1273,7 @@
     (function (symbolName) {
 
     })("tooltip_librosAmov");
-    //Edge symbol end:'tooltip_librosAmov'
+   //Edge symbol end:'tooltip_librosAmov'
 
     //=========================================================
 
@@ -1287,7 +1288,7 @@
         //Edge binding end
 
     })("tooltip_mapa");
-    //Edge symbol end:'tooltip_mapa'
+   //Edge symbol end:'tooltip_mapa'
 
     //=========================================================
 
@@ -1295,7 +1296,7 @@
     (function (symbolName) {
 
     })("tooltip_mapaMov");
-    //Edge symbol end:'tooltip_mapaMov'
+   //Edge symbol end:'tooltip_mapaMov'
 
     //=========================================================
 
@@ -1310,7 +1311,7 @@
         //Edge binding end
 
     })("tooltip_PDF");
-    //Edge symbol end:'tooltip_PDF'
+   //Edge symbol end:'tooltip_PDF'
 
     //=========================================================
 
@@ -1318,7 +1319,7 @@
     (function (symbolName) {
 
     })("tooltip_PDFmov");
-    //Edge symbol end:'tooltip_PDFmov'
+   //Edge symbol end:'tooltip_PDFmov'
 
     //=========================================================
 
@@ -1333,7 +1334,7 @@
         //Edge binding end
 
     })("barra_herramientas");
-    //Edge symbol end:'barra_herramientas'
+   //Edge symbol end:'barra_herramientas'
 
     //=========================================================
 
@@ -1438,25 +1439,44 @@
 
         Symbol.bindElementAction(compId, symbolName, "${btn_fullscreen}", "click", function (sym, e) {
             // Fullscreen
+            $("body").trigger({
+                type: "EDGE_Plantilla_click",
+                sym: sym,
+                evt: e
+            });
 
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${btn_creditos}", "click", function (sym, e) {
             // Popup de creditos
+            $("body").trigger({
+                type: "EDGE_Plantilla_click",
+                sym: sym,
+                evt: e
+            });
 
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${btn_ayuda}", "click", function (sym, e) {
             //  poup ayuda
+            $("body").trigger({
+                type: "EDGE_Plantilla_click",
+                sym: sym,
+                evt: e
+            });
 
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${btn_audio}", "click", function (sym, e) {
             // funcion de sonido
-
+            $("body").trigger({
+                type: "EDGE_Plantilla_click",
+                sym: sym,
+                evt: e
+            });
         });
         //Edge binding end
 
@@ -1464,7 +1484,7 @@
             // poup de informaccion
             // Mostrar un elemento 
             // Plantilla creada
-            $.trigger({
+            $("body").trigger({
                 type: "EDGE_Plantilla_click",
                 sym: sym,
                 evt: e
@@ -1476,12 +1496,17 @@
 
         Symbol.bindElementAction(compId, symbolName, "${btn_acces}", "click", function (sym, e) {
             // popup de accesibilidad
+            $("body").trigger({
+                type: "EDGE_Plantilla_click",
+                sym: sym,
+                evt: e
+            });
 
         });
         //Edge binding end
 
     })("barra_herramientasMov");
-    //Edge symbol end:'barra_herramientasMov'
+   //Edge symbol end:'barra_herramientasMov'
 
     //=========================================================
 
@@ -1489,7 +1514,7 @@
     (function (symbolName) {
 
     })("btn_fullscreen");
-    //Edge symbol end:'btn_fullscreen'
+   //Edge symbol end:'btn_fullscreen'
 
     //=========================================================
 
@@ -1497,7 +1522,7 @@
     (function (symbolName) {
 
     })("btn_creditos");
-    //Edge symbol end:'btn_creditos'
+   //Edge symbol end:'btn_creditos'
 
     //=========================================================
 
@@ -1505,7 +1530,7 @@
     (function (symbolName) {
 
     })("btn_ayuda");
-    //Edge symbol end:'btn_ayuda'
+   //Edge symbol end:'btn_ayuda'
 
     //=========================================================
 
@@ -1513,7 +1538,7 @@
     (function (symbolName) {
 
     })("btn_audio");
-    //Edge symbol end:'btn_audio'
+   //Edge symbol end:'btn_audio'
 
     //=========================================================
 
@@ -1521,7 +1546,7 @@
     (function (symbolName) {
 
     })("btn_info");
-    //Edge symbol end:'btn_info'
+   //Edge symbol end:'btn_info'
 
     //=========================================================
 
@@ -1529,7 +1554,7 @@
     (function (symbolName) {
 
     })("btn_acces");
-    //Edge symbol end:'btn_acces'
+   //Edge symbol end:'btn_acces'
 
     //=========================================================
 
@@ -1544,7 +1569,7 @@
         //Edge binding end
 
     })("tooltip_fs");
-    //Edge symbol end:'tooltip_fs'
+   //Edge symbol end:'tooltip_fs'
 
     //=========================================================
 
@@ -1552,7 +1577,7 @@
     (function (symbolName) {
 
     })("tooltip_fsMov");
-    //Edge symbol end:'tooltip_fsMov'
+   //Edge symbol end:'tooltip_fsMov'
 
     //=========================================================
 
@@ -1567,7 +1592,7 @@
         //Edge binding end
 
     })("tooltip_cred");
-    //Edge symbol end:'tooltip_cred'
+   //Edge symbol end:'tooltip_cred'
 
     //=========================================================
 
@@ -1575,7 +1600,7 @@
     (function (symbolName) {
 
     })("tooltip_credMov");
-    //Edge symbol end:'tooltip_credMov'
+   //Edge symbol end:'tooltip_credMov'
 
     //=========================================================
 
@@ -1590,7 +1615,7 @@
         //Edge binding end
 
     })("tooltip_ayuda");
-    //Edge symbol end:'tooltip_ayuda'
+   //Edge symbol end:'tooltip_ayuda'
 
     //=========================================================
 
@@ -1598,7 +1623,7 @@
     (function (symbolName) {
 
     })("tooltip_ayudaMov");
-    //Edge symbol end:'tooltip_ayudaMov'
+   //Edge symbol end:'tooltip_ayudaMov'
 
     //=========================================================
 
@@ -1613,7 +1638,7 @@
         //Edge binding end
 
     })("tooltip_audio");
-    //Edge symbol end:'tooltip_audio'
+   //Edge symbol end:'tooltip_audio'
 
     //=========================================================
 
@@ -1621,7 +1646,7 @@
     (function (symbolName) {
 
     })("tooltip_audioMov");
-    //Edge symbol end:'tooltip_audioMov'
+   //Edge symbol end:'tooltip_audioMov'
 
     //=========================================================
 
@@ -1636,7 +1661,7 @@
         //Edge binding end
 
     })("tooltip_info");
-    //Edge symbol end:'tooltip_info'
+   //Edge symbol end:'tooltip_info'
 
     //=========================================================
 
@@ -1644,7 +1669,7 @@
     (function (symbolName) {
 
     })("tooltip_infoMov");
-    //Edge symbol end:'tooltip_infoMov'
+   //Edge symbol end:'tooltip_infoMov'
 
     //=========================================================
 
@@ -1659,7 +1684,7 @@
         //Edge binding end
 
     })("tooltip_acces");
-    //Edge symbol end:'tooltip_acces'
+   //Edge symbol end:'tooltip_acces'
 
     //=========================================================
 
@@ -1667,7 +1692,7 @@
     (function (symbolName) {
 
     })("tooltip_accesMov");
-    //Edge symbol end:'tooltip_accesMov'
+   //Edge symbol end:'tooltip_accesMov'
 
     //=========================================================
 
@@ -1682,7 +1707,7 @@
         //Edge binding end
 
     })("contened_apertura");
-    //Edge symbol end:'contened_apertura'
+   //Edge symbol end:'contened_apertura'
 
     //=========================================================
 
@@ -1697,7 +1722,7 @@
         //Edge binding end
 
     })("contened_contextual");
-    //Edge symbol end:'contened_contextual'
+   //Edge symbol end:'contened_contextual'
 
     //=========================================================
 
@@ -1712,7 +1737,7 @@
         //Edge binding end
 
     })("contened_contenidos");
-    //Edge symbol end:'contened_contenidos'
+   //Edge symbol end:'contened_contenidos'
 
     //=========================================================
 
@@ -1727,7 +1752,7 @@
         //Edge binding end
 
     })("contenedor_recordemos");
-    //Edge symbol end:'contenedor_recordemos'
+   //Edge symbol end:'contenedor_recordemos'
 
     //=========================================================
 
@@ -1742,7 +1767,7 @@
         //Edge binding end
 
     })("contend_preguntas");
-    //Edge symbol end:'contend_preguntas'
+   //Edge symbol end:'contend_preguntas'
 
     //=========================================================
 
@@ -1757,7 +1782,7 @@
         //Edge binding end
 
     })("contened_cierre");
-    //Edge symbol end:'contened_cierre'
+   //Edge symbol end:'contened_cierre'
 
     //=========================================================
 
@@ -1772,7 +1797,7 @@
         //Edge binding end
 
     })("contened_PDF");
-    //Edge symbol end:'contened_PDF'
+   //Edge symbol end:'contened_PDF'
 
     //=========================================================
 
@@ -1787,7 +1812,7 @@
         //Edge binding end
 
     })("contened_biblio");
-    //Edge symbol end:'contened_biblio'
+   //Edge symbol end:'contened_biblio'
 
     //=========================================================
 
@@ -1802,7 +1827,7 @@
         //Edge binding end
 
     })("contened_glos");
-    //Edge symbol end:'contened_glos'
+   //Edge symbol end:'contened_glos'
 
     //=========================================================
 
@@ -1817,7 +1842,7 @@
         //Edge binding end
 
     })("contened_mapa");
-    //Edge symbol end:'contened_mapa'
+   //Edge symbol end:'contened_mapa'
 
     //=========================================================
 
@@ -1825,7 +1850,7 @@
     (function (symbolName) {
 
     })("contened_home");
-    //Edge symbol end:'contened_home'
+   //Edge symbol end:'contened_home'
 
     //=========================================================
 
@@ -1833,7 +1858,7 @@
     (function (symbolName) {
 
     })("contenedor_popup");
-    //Edge symbol end:'contenedor_popup'
+   //Edge symbol end:'contenedor_popup'
 
     //=========================================================
 
@@ -1841,7 +1866,7 @@
     (function (symbolName) {
 
     })("popup_contenido_1");
-    //Edge symbol end:'popup_contenido_1'
+   //Edge symbol end:'popup_contenido_1'
 
     //=========================================================
 
@@ -1849,6 +1874,14 @@
     (function (symbolName) {
 
     })("poup_contenido_2");
-    //Edge symbol end:'poup_contenido_2'
+   //Edge symbol end:'poup_contenido_2'
+
+   //=========================================================
+   
+   //Edge symbol: 'Precargador'
+   (function(symbolName) {   
+   
+   })("Precargador");
+   //Edge symbol end:'Precargador'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-5617841");

@@ -1,0 +1,154 @@
+[0803/100323:ERROR:gl_surface_egl.cc(133)] eglInitialize failed with error UNKNOWN
+[0803/100324:ERROR:gl_surface_win.cc(97)] GLSurfaceEGL::InitializeOneOff failed.
+[0803/100415:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/100429:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/100439:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/100439:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/100524:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100524:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100524:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100530:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0803/100531:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0803/100533:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100533:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100533:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100615:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100615:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/100615:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104339:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104339:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104339:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104530:ERROR:gl_surface_egl.cc(133)] eglInitialize failed with error UNKNOWN
+[0803/104530:ERROR:gl_surface_win.cc(97)] GLSurfaceEGL::InitializeOneOff failed.
+[0803/104608:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/104610:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/104620:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/104620:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/104647:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104647:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104647:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104650:INFO:CONSOLE(1)] "ReferenceError: EdgeDOM is not defined
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:13)
+    at <anonymous>:0:53", source:  (1)
+[0803/104650:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot call method 'appendChild' of undefined", source: v8/appCss (1)
+[0803/104650:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot call method 'appendChild' of undefined", source: v8/appCss (1)
+[0803/104651:INFO:CONSOLE(1)] "ReferenceError: EdgeDOM is not defined
+    at eval (eval at <anonymous> (about:blank:0:45), <anonymous>:1:7)
+    at about:blank:0:45", source:  (1)
+[0803/104656:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104656:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104656:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104658:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0803/104658:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0803/104703:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/104731:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104731:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104731:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/104834:INFO:CONSOLE(0)] "Uncaught TypeError: Cannot read property 'nodeType' of undefined,4", source: about:docKey-194 (0)
+[0803/104834:INFO:CONSOLE(4)] "Uncaught TypeError: Cannot read property 'nodeType' of undefined", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/hangarita/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/MuyBienPopup/edge_includes/jquery-2.0.3.min.js (4)
+[0803/105147:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/105147:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/105147:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115441:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115442:ERROR:gl_surface_egl.cc(133)] eglInitialize failed with error UNKNOWN
+[0803/115442:ERROR:gl_surface_win.cc(97)] GLSurfaceEGL::InitializeOneOff failed.
+[0803/115446:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115451:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115456:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115501:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115506:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115511:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115514:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/115516:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115518:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/115519:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0803/115521:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115526:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115531:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115536:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115538:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115538:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115538:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115538:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115541:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115544:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0803/115544:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0803/115546:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115546:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115546:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115546:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/115546:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115551:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115556:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115601:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115606:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115611:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115616:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115621:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115626:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115631:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115636:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115641:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115646:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115651:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115656:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115701:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115706:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115711:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115716:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115721:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115726:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115731:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115736:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115741:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115746:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115751:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115756:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115801:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115806:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115811:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115816:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115821:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115826:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115831:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115836:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115841:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115846:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115851:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115856:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115901:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115906:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115911:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115916:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115921:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115926:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115931:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115936:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115941:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115946:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115951:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/115956:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120001:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120006:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120011:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120016:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120021:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120026:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120031:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120036:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120041:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120045:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/120045:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/120045:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/120045:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0803/120046:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120051:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120056:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120101:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120106:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120111:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120116:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120121:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120126:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120131:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0803/120135:ERROR:ipc_channel_win.cc(132)] pipe error: 109

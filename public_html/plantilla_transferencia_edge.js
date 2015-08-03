@@ -20,7 +20,8 @@
             js+"jquery-ui-1.11.4.custom/jquery-ui.min.js",
             js+"jquery.fullscreen-0.5.0/jquery.fullscreen.min.js",
             js+"ion.sound-3.0.5/js/ion.sound.min.js",
-            "files/plantilla/main.js"
+            js+"plantilla/main.js",
+            js+"EdgeCommons.js"
         ],
         symbols = {
             "stage": {
@@ -36,13 +37,13 @@
                             id: 'fondo_plantilla',
                             type: 'image',
                             rect: ['0px', '0px', '1080px', '604px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"fondo_plantilla.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"plantilla/fondo_plantilla.png",'0px','0px']
                         },
                         {
                             id: 'cont_blancopac',
                             type: 'image',
                             rect: ['8px', '50px', '1063px', '442px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"cont_blancopac.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"plantilla/cont_blancopac.png",'0px','0px']
                         },
                         {
                             id: 'home',
@@ -191,7 +192,7 @@
                             id: 'barra_sena',
                             type: 'image',
                             rect: ['8px', '10px', '1063px', '59px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"barra_sena.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"plantilla/barra_sena.png",'0px','0px']
                         },
                         {
                             id: 'barra_herramientas',
@@ -204,7 +205,7 @@
                             type: 'image',
                             rect: ['1040px', '10px', '31px', '38px', 'auto', 'auto'],
                             cursor: 'pointer',
-                            fill: ["rgba(0,0,0,0)",im+"btn_menu-desp.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"plantilla/btn_menu-desp.png",'0px','0px']
                         },
                         {
                             id: 'contenedor_popup',
@@ -219,7 +220,7 @@
                             isStage: true,
                             rect: ['null', 'null', '1080px', '600px', 'auto', 'auto'],
                             overflow: 'hidden',
-                            fill: ["rgba(255,255,255,1)"]
+                            fill: ["rgba(147,147,147,1.00)"]
                         }
                     }
                 },
@@ -250,22 +251,22 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-4px', '-3px', '59px', '59px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'borde_btnHome',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnHome.png', '0px', '0px']
+                            rect: ['-4px', '-3px', '59px', '59px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnHome.png', '0px', '0px']
                         },
                         {
-                            rect: ['0px', '0px', '53px', '53px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'btn_home',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_home.png', '0px', '0px']
+                            rect: ['0px', '0px', '53px', '53px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_home.png', '0px', '0px']
                         },
                         {
-                            rect: ['-31', '-30', '116', '35', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tool_Home',
                             symbolName: 'tool_Home',
-                            type: 'rect'
+                            rect: ['-31', '-30', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -292,29 +293,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-2px', '-2px', '39px', '39px', 'auto', 'auto'],
-                            id: 'borde_btnsVerdes',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnsVerdes.png', '0px', '0px']
+                            id: 'borde_btnsVerdes',
+                            rect: ['-2px', '-2px', '39px', '39px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnsVerdes.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-2px', '-2px', '39px', '39px', 'auto', 'auto'],
                             id: 'estado_bordelibro',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde8.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['0px', '0px', '35px', '35px', 'auto', 'auto'],
-                            id: 'btn_libros',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_libros.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde8.png', '0px', '0px']
                         },
                         {
-                            rect: ['-40px', '-35px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_libros',
+                            rect: ['0px', '0px', '35px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_libros.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tool_libros',
                             symbolName: 'tool_libros',
-                            type: 'rect'
+                            rect: ['-40px', '-35px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -350,29 +351,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0', '0', '39px', '39px', 'auto', 'auto'],
-                            id: 'borde_btnsVerdes2',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnsVerdes2.png', '0px', '0px']
+                            id: 'borde_btnsVerdes2',
+                            rect: ['0', '0', '39px', '39px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnsVerdes2.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['0px', '0', '39px', '39px', 'auto', 'auto'],
                             id: 'estado_bordeglos',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde9.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['2px', '2px', '35px', '35px', 'auto', 'auto'],
-                            id: 'btn_libroA3',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_libroA.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde9.png', '0px', '0px']
                         },
                         {
-                            rect: ['-38px', '-29px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_libroA3',
+                            rect: ['2px', '2px', '35px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_libroA.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tooltip_librosA',
                             symbolName: 'tooltip_librosA',
-                            type: 'rect'
+                            rect: ['-38px', '-29px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -408,29 +409,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-2px', '-2px', '39px', '39px', 'auto', 'auto'],
-                            id: 'borde_btnsVerdes32',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnsVerdes3.png', '0px', '0px']
+                            id: 'borde_btnsVerdes32',
+                            rect: ['-2px', '-2px', '39px', '39px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnsVerdes3.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-2px', '-2px', '39px', '39px', 'auto', 'auto'],
                             id: 'estado_bordemapa',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde10.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['0px', '0px', '35px', '35px', 'auto', 'auto'],
-                            id: 'btn_mapaconc',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_mapaconc.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde10.png', '0px', '0px']
                         },
                         {
-                            rect: ['-41px', '-35px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_mapaconc',
+                            rect: ['0px', '0px', '35px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_mapaconc.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tooltip_mapa',
                             symbolName: 'tooltip_mapa',
-                            type: 'rect'
+                            rect: ['-41px', '-35px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -466,29 +467,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '-3px', '60px', '60px', 'auto', 'auto'],
-                            id: 'borde_btnAbajo',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnAbajo.png', '0px', '0px']
+                            id: 'borde_btnAbajo',
+                            rect: ['0px', '-3px', '60px', '60px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnAbajo.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['0', '-2px', '60px', '60px', 'auto', 'auto'],
                             id: 'estado_borde',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['3px', '1px', '54px', '53px', 'auto', 'auto'],
-                            id: 'btn_leyendo',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_leyendo.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde.png', '0px', '0px']
                         },
                         {
-                            rect: ['-28', '-27', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_leyendo',
+                            rect: ['3px', '1px', '54px', '53px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_leyendo.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tool_btn1',
                             symbolName: 'tool_btn1',
-                            type: 'rect'
+                            rect: ['-28', '-27', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -524,29 +525,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
-                            id: 'borde_btnAbajo2',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnAbajo2.png', '0px', '0px']
+                            id: 'borde_btnAbajo2',
+                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnAbajo2.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
                             id: 'estado_borde2',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde2.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['-1px', '0px', '52px', '52px', 'auto', 'auto'],
-                            id: 'btn_sol',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_sol.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde2.png', '0px', '0px']
                         },
                         {
-                            rect: ['-32', '-34px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_sol',
+                            rect: ['-1px', '0px', '52px', '52px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_sol.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tooltip_btn2',
                             symbolName: 'tooltip_btn2',
-                            type: 'rect'
+                            rect: ['-32', '-34px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -582,29 +583,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
-                            id: 'borde_btnAbajo4',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnAbajo4.png', '0px', '0px']
+                            id: 'borde_btnAbajo4',
+                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnAbajo4.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
                             id: 'estado_borde3',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde3.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['0px', '0px', '52px', '52px', 'auto', 'auto'],
-                            id: 'btn_papelera',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_papelera.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde3.png', '0px', '0px']
                         },
                         {
-                            rect: ['-32px', '-31px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_papelera',
+                            rect: ['0px', '0px', '52px', '52px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_papelera.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tootip_btn3',
                             symbolName: 'tootip_btn3',
-                            type: 'rect'
+                            rect: ['-32px', '-31px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -640,29 +641,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-3px', '-5px', '60px', '60px', 'auto', 'auto'],
-                            id: 'borde_btnAbajo5',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnAbajo5.png', '0px', '0px']
+                            id: 'borde_btnAbajo5',
+                            rect: ['-3px', '-5px', '60px', '60px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnAbajo5.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-3px', '-5px', '60px', '60px', 'auto', 'auto'],
                             id: 'estado_borde4',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde4.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['0px', '-1px', '54px', '53px', 'auto', 'auto'],
-                            id: 'btn_pensar',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_pensar.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde4.png', '0px', '0px']
                         },
                         {
-                            rect: ['-31', '-35px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_pensar',
+                            rect: ['0px', '-1px', '54px', '53px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_pensar.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tooltip_btn4',
                             symbolName: 'tooltip_btn4',
-                            type: 'rect'
+                            rect: ['-31', '-35px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -698,29 +699,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
-                            id: 'borde_btnAbajo6',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnAbajo6.png', '0px', '0px']
+                            id: 'borde_btnAbajo6',
+                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnAbajo6.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
                             id: 'estado_borde5',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde5.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['0px', '0px', '52px', '52px', 'auto', 'auto'],
-                            id: 'btn_doc',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_doc.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde5.png', '0px', '0px']
                         },
                         {
-                            rect: ['-32px', '-31px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_doc',
+                            rect: ['0px', '0px', '52px', '52px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_doc.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tooltip_bnt5',
                             symbolName: 'tooltip_bnt5',
-                            type: 'rect'
+                            rect: ['-32px', '-31px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -756,29 +757,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
-                            id: 'borde_btnAbajo7',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnAbajo7.png', '0px', '0px']
+                            id: 'borde_btnAbajo7',
+                            rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnAbajo7.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-4px', '-4px', '60px', '60px', 'auto', 'auto'],
                             id: 'estado_borde6',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde6.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['0px', '0px', '52px', '52px', 'auto', 'auto'],
-                            id: 'btn_hablar',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_hablar.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde6.png', '0px', '0px']
                         },
                         {
-                            rect: ['-32px', '-33px', '116', '35', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_hablar',
+                            rect: ['0px', '0px', '52px', '52px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_hablar.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tooltip_btn6',
                             symbolName: 'tooltip_btn6',
-                            type: 'rect'
+                            rect: ['-32px', '-33px', '116', '35', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -814,29 +815,29 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-1px', '-2px', '39px', '39px', 'auto', 'auto'],
-                            id: 'borde_btnPDF',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/borde_btnPDF.png', '0px', '0px']
+                            id: 'borde_btnPDF',
+                            rect: ['-1px', '-2px', '39px', '39px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/borde_btnPDF.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            display: 'none',
                             rect: ['-1px', '-2px', '39px', '39px', 'auto', 'auto'],
                             id: 'estado_bordePDF',
-                            fill: ['rgba(0,0,0,0)', 'images/estado_borde7.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['0px', '0px', '35px', '35px', 'auto', 'auto'],
-                            id: 'btn_pdf',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/btn_pdf.png', '0px', '0px']
+                            display: 'none',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/estado_borde7.png', '0px', '0px']
                         },
                         {
-                            rect: ['-108', '3px', '110', '32', 'auto', 'auto'],
+                            type: 'image',
+                            id: 'btn_pdf',
+                            rect: ['0px', '0px', '35px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn_pdf.png', '0px', '0px']
+                        },
+                        {
+                            type: 'rect',
                             id: 'tooltip_PDF',
                             symbolName: 'tooltip_PDF',
-                            type: 'rect'
+                            rect: ['-108', '3px', '110', '32', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -872,12 +873,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.2', '0.2']],
+                            rect: ['0', '40px', '116', '35', 'auto', 'auto'],
                             id: 'tooltipMov',
                             symbolName: 'tooltipMov',
                             opacity: '0',
-                            rect: ['0', '40px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -901,14 +902,14 @@
                             '1'
                         ],
                         [
-                            "eid4",
-                            "top",
+                            "eid12",
+                            "scaleX",
                             0,
                             320,
                             "easeOutQuart",
                             "${tooltipMov}",
-                            '40px',
-                            '0px'
+                            '0.2',
+                            '1'
                         ],
                         [
                             "eid7",
@@ -921,14 +922,14 @@
                             '1'
                         ],
                         [
-                            "eid12",
-                            "scaleX",
+                            "eid4",
+                            "top",
                             0,
                             320,
                             "easeOutQuart",
                             "${tooltipMov}",
-                            '0.2',
-                            '1'
+                            '40px',
+                            '0px'
                         ]
                     ]
                 }
@@ -943,18 +944,18 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'tootip',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-39.png', '0px', '0px']
+                            id: 'tootip',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-39.png', '0px', '0px']
                         },
                         {
-                            rect: ['0px', '5px', '115px', '14px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [9, 'px'], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', 'normal'],
+                            type: 'text',
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\">​Sencibilización de apertura</p>',
                             align: 'center',
-                            type: 'text'
+                            rect: ['0px', '5px', '115px', '14px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -984,8 +985,8 @@
                             rect: ['0', '35px', '116', '35', 'auto', 'auto'],
                             id: 'tooltipMov2',
                             symbolName: 'tooltipMov2',
-                            type: 'rect',
-                            opacity: '0'
+                            opacity: '0',
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -999,16 +1000,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid19",
-                            "top",
-                            0,
-                            325,
-                            "easeOutQuart",
-                            "${tooltipMov2}",
-                            '35px',
-                            '0px'
-                        ],
-                        [
                             "eid30",
                             "scaleY",
                             0,
@@ -1017,6 +1008,16 @@
                             "${tooltipMov2}",
                             '0.2',
                             '1'
+                        ],
+                        [
+                            "eid19",
+                            "top",
+                            0,
+                            325,
+                            "easeOutQuart",
+                            "${tooltipMov2}",
+                            '35px',
+                            '0px'
                         ],
                         [
                             "eid22",
@@ -1051,19 +1052,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'tooltip2',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-392.png', '0px', '0px']
+                            id: 'tooltip2',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-392.png', '0px', '0px']
                         },
                         {
-                            rect: ['6px', '5px', '106px', '14px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text2',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Contextualización</p>',
+                            id: 'Text2',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['6px', '5px', '106px', '14px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1090,12 +1091,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.2', '0.2']],
+                            rect: ['0', '35px', '116', '35', 'auto', 'auto'],
                             id: 'tooltipMov3',
                             symbolName: 'tooltipMov3',
                             opacity: '0',
-                            rect: ['0', '35px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1129,16 +1130,6 @@
                             '1'
                         ],
                         [
-                            "eid36",
-                            "top",
-                            0,
-                            310,
-                            "easeOutQuart",
-                            "${tooltipMov3}",
-                            '35px',
-                            '0px'
-                        ],
-                        [
                             "eid44",
                             "scaleX",
                             0,
@@ -1147,6 +1138,16 @@
                             "${tooltipMov3}",
                             '0.2',
                             '1'
+                        ],
+                        [
+                            "eid36",
+                            "top",
+                            0,
+                            310,
+                            "easeOutQuart",
+                            "${tooltipMov3}",
+                            '35px',
+                            '0px'
                         ]
                     ]
                 }
@@ -1161,19 +1162,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip3',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-393.png', '0px', '0px']
+                            id: 'ToolTip3',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-393.png', '0px', '0px']
                         },
                         {
-                            rect: ['6px', '5px', '106px', '13px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [10, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text3',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Contenidos / actividades<span style=\"font-size: 9px;\">​</span></p>',
+                            id: 'Text3',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['6px', '5px', '106px', '13px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1200,12 +1201,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.2', '0.2']],
+                            rect: ['0', '41px', '116', '35', 'auto', 'auto'],
                             id: 'tooltipMov4',
                             symbolName: 'tooltipMov4',
                             opacity: '0',
-                            rect: ['0', '41px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1219,16 +1220,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid55",
-                            "scaleY",
-                            0,
-                            300,
-                            "easeOutQuart",
-                            "${tooltipMov4}",
-                            '0.2',
-                            '1'
-                        ],
-                        [
                             "eid57",
                             "top",
                             0,
@@ -1237,6 +1228,16 @@
                             "${tooltipMov4}",
                             '41px',
                             '0px'
+                        ],
+                        [
+                            "eid56",
+                            "opacity",
+                            0,
+                            300,
+                            "easeOutQuart",
+                            "${tooltipMov4}",
+                            '0',
+                            '1'
                         ],
                         [
                             "eid54",
@@ -1249,13 +1250,13 @@
                             '1'
                         ],
                         [
-                            "eid56",
-                            "opacity",
+                            "eid55",
+                            "scaleY",
                             0,
                             300,
                             "easeOutQuart",
                             "${tooltipMov4}",
-                            '0',
+                            '0.2',
                             '1'
                         ]
                     ]
@@ -1271,19 +1272,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip4',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-394.png', '0px', '0px']
+                            id: 'ToolTip4',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-394.png', '0px', '0px']
                         },
                         {
-                            rect: ['5px', '4px', '106px', '11px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text4',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Recordemos</p>',
+                            id: 'Text4',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['5px', '4px', '106px', '11px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1310,12 +1311,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.2', '0.2']],
+                            rect: ['0', '35px', '116', '35', 'auto', 'auto'],
                             id: 'tooltipMov5',
                             symbolName: 'tooltipMov5',
                             opacity: '0',
-                            rect: ['0', '35px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1329,16 +1330,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid69",
-                            "top",
-                            0,
-                            295,
-                            "easeOutQuart",
-                            "${tooltipMov5}",
-                            '35px',
-                            '0px'
-                        ],
-                        [
                             "eid71",
                             "scaleY",
                             0,
@@ -1347,6 +1338,16 @@
                             "${tooltipMov5}",
                             '0.2',
                             '1'
+                        ],
+                        [
+                            "eid69",
+                            "top",
+                            0,
+                            295,
+                            "easeOutQuart",
+                            "${tooltipMov5}",
+                            '35px',
+                            '0px'
                         ],
                         [
                             "eid72",
@@ -1381,19 +1382,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip5',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-395.png', '0px', '0px']
+                            id: 'ToolTip5',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-395.png', '0px', '0px']
                         },
                         {
-                            rect: ['1px', '5px', '116px', '13px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [9, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text5',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Preguntas de conocimiento</p>',
+                            id: 'Text5',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['1px', '5px', '116px', '13px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1420,12 +1421,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.2', '0.2']],
+                            rect: ['0', '35px', '116', '35', 'auto', 'auto'],
                             id: 'tooltipMov6',
                             symbolName: 'tooltipMov6',
                             opacity: '0',
-                            rect: ['0', '35px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1439,16 +1440,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid85",
-                            "scaleY",
-                            0,
-                            295,
-                            "easeOutQuart",
-                            "${tooltipMov6}",
-                            '0.2',
-                            '1'
-                        ],
-                        [
                             "eid83",
                             "top",
                             0,
@@ -1457,6 +1448,16 @@
                             "${tooltipMov6}",
                             '35px',
                             '0px'
+                        ],
+                        [
+                            "eid85",
+                            "scaleY",
+                            0,
+                            295,
+                            "easeOutQuart",
+                            "${tooltipMov6}",
+                            '0.2',
+                            '1'
                         ],
                         [
                             "eid86",
@@ -1491,19 +1492,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip6',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-396.png', '0px', '0px']
+                            id: 'ToolTip6',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-396.png', '0px', '0px']
                         },
                         {
-                            rect: ['0px', '5px', '116px', '12px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [10, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text6',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Sensibilización de cierre</p>',
+                            id: 'Text6',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['0px', '5px', '116px', '12px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1530,12 +1531,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0', '0']],
+                            rect: ['0', '35px', '116', '35', 'auto', 'auto'],
                             id: 'tool_homeMov',
                             symbolName: 'tool_homeMov',
                             opacity: '0',
-                            rect: ['0', '35px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1549,16 +1550,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid95",
-                            "top",
-                            0,
-                            305,
-                            "easeOutQuart",
-                            "${tool_homeMov}",
-                            '35px',
-                            '0px'
-                        ],
-                        [
                             "eid96",
                             "opacity",
                             0,
@@ -1567,6 +1558,16 @@
                             "${tool_homeMov}",
                             '0',
                             '1'
+                        ],
+                        [
+                            "eid95",
+                            "top",
+                            0,
+                            305,
+                            "easeOutQuart",
+                            "${tool_homeMov}",
+                            '35px',
+                            '0px'
                         ],
                         [
                             "eid98",
@@ -1601,18 +1602,18 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip9-home',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-399.png', '0px', '0px']
+                            id: 'ToolTip9-home',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-399.png', '0px', '0px']
                         },
                         {
-                            rect: ['7px', '4px', '103px', '15px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', 'normal'],
+                            type: 'text',
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\">​Volver a lecciones</p>',
                             align: 'center',
-                            type: 'text'
+                            rect: ['7px', '4px', '103px', '15px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1639,12 +1640,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.1', '0.1']],
+                            rect: ['0', '24px', '116', '35', 'auto', 'auto'],
                             id: 'tool_librosMov',
                             symbolName: 'tool_librosMov',
                             opacity: '0',
-                            rect: ['0', '24px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1668,14 +1669,14 @@
                             '1'
                         ],
                         [
-                            "eid109",
-                            "scaleY",
+                            "eid107",
+                            "top",
                             0,
                             305,
                             "easeOutQuart",
                             "${tool_librosMov}",
-                            '0.1',
-                            '1'
+                            '24px',
+                            '0px'
                         ],
                         [
                             "eid110",
@@ -1688,14 +1689,14 @@
                             '1'
                         ],
                         [
-                            "eid107",
-                            "top",
+                            "eid109",
+                            "scaleY",
                             0,
                             305,
                             "easeOutQuart",
                             "${tool_librosMov}",
-                            '24px',
-                            '0px'
+                            '0.1',
+                            '1'
                         ]
                     ]
                 }
@@ -1710,19 +1711,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip10libros',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-3910.png', '0px', '0px']
+                            id: 'ToolTip10libros',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-3910.png', '0px', '0px']
                         },
                         {
-                            rect: ['5px', '5px', '106px', '11px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text2',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Bibliografía</p>',
+                            id: 'Text2',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['5px', '5px', '106px', '11px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1749,12 +1750,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.1', '0.1']],
+                            rect: ['0', '26px', '116', '35', 'auto', 'auto'],
                             id: 'tooltip_librosAmov',
                             symbolName: 'tooltip_librosAmov',
                             opacity: '0',
-                            rect: ['0', '26px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1768,8 +1769,8 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid120",
-                            "scaleX",
+                            "eid121",
+                            "scaleY",
                             0,
                             310,
                             "easeOutQuart",
@@ -1778,8 +1779,8 @@
                             '1'
                         ],
                         [
-                            "eid121",
-                            "scaleY",
+                            "eid120",
+                            "scaleX",
                             0,
                             310,
                             "easeOutQuart",
@@ -1820,19 +1821,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip-libroA11',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-3911.png', '0px', '0px']
+                            id: 'ToolTip-libroA11',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-3911.png', '0px', '0px']
                         },
                         {
-                            rect: ['5px', '5px', '107px', '12px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text3',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Glosario</p>',
+                            id: 'Text3',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['5px', '5px', '107px', '12px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1859,12 +1860,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.1', '0.1']],
+                            rect: ['0', '27px', '116', '35', 'auto', 'auto'],
                             id: 'tooltip_mapaMov',
                             symbolName: 'tooltip_mapaMov',
                             opacity: '0',
-                            rect: ['0', '27px', '116', '35', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -1878,16 +1879,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid133",
-                            "scaleY",
-                            0,
-                            295,
-                            "easeOutQuart",
-                            "${tooltip_mapaMov}",
-                            '0.1',
-                            '1'
-                        ],
-                        [
                             "eid134",
                             "opacity",
                             0,
@@ -1895,6 +1886,16 @@
                             "easeOutQuart",
                             "${tooltip_mapaMov}",
                             '0',
+                            '1'
+                        ],
+                        [
+                            "eid132",
+                            "scaleX",
+                            0,
+                            295,
+                            "easeOutQuart",
+                            "${tooltip_mapaMov}",
+                            '0.1',
                             '1'
                         ],
                         [
@@ -1908,8 +1909,8 @@
                             '0px'
                         ],
                         [
-                            "eid132",
-                            "scaleX",
+                            "eid133",
+                            "scaleY",
                             0,
                             295,
                             "easeOutQuart",
@@ -1930,19 +1931,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
-                            id: 'ToolTip_mapa12',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Tool%20Tip-3912.png', '0px', '0px']
+                            id: 'ToolTip_mapa12',
+                            rect: ['0px', '0px', '116px', '35px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/Tool%20Tip-3912.png', '0px', '0px']
                         },
                         {
-                            rect: ['6px', '5px', '106px', '15px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text4',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​Mapa conceptual</p>',
+                            id: 'Text4',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['6px', '5px', '106px', '15px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1969,12 +1970,12 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             transform: [[], [], [], ['0.1', '0.1']],
+                            rect: ['70px', '0', '110', '32', 'auto', 'auto'],
                             id: 'tooltip_PDFmov',
                             symbolName: 'tooltip_PDFmov',
                             opacity: '0',
-                            rect: ['70px', '0', '110', '32', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -2008,8 +2009,8 @@
                             '1'
                         ],
                         [
-                            "eid146",
-                            "scaleY",
+                            "eid145",
+                            "scaleX",
                             0,
                             305,
                             "easeOutQuart",
@@ -2018,8 +2019,8 @@
                             '1'
                         ],
                         [
-                            "eid145",
-                            "scaleX",
+                            "eid146",
+                            "scaleY",
                             0,
                             305,
                             "easeOutQuart",
@@ -2040,19 +2041,19 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
-                            id: 'tooltip_barraPDF',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/tooltip_barra_h.png', '0px', '0px']
+                            id: 'tooltip_barraPDF',
+                            rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/tooltip_barra_h.png', '0px', '0px']
                         },
                         {
-                            rect: ['8px', '6px', '89px', '14px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
-                            align: 'center',
-                            id: 'Text5',
+                            type: 'text',
                             text: '<p style=\"margin: 0px;\">​PDF&nbsp;</p>',
+                            id: 'Text5',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['8px', '6px', '89px', '14px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -2120,11 +2121,11 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'barra_herr-final',
                             rect: ['0px', '0px', '31px', '192px', 'auto', 'auto'],
+                            id: 'barra_herr-final',
+                            type: 'image',
                             cursor: 'default',
-                            fill: ['rgba(0,0,0,0)', 'images/barra_herr-final.png', '0px', '0px']
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/barra_herr-final.png', '0px', '0px']
                         },
                         {
                             type: 'rect',
@@ -2193,17 +2194,17 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'fullscreen-img',
                             rect: ['0px', '0px', '22px', '22px', 'auto', 'auto'],
+                            id: 'fullscreen-img',
+                            type: 'image',
                             clip: 'rect(0px 22px 22px 0px)',
-                            fill: ['rgba(0,0,0,0)', 'images/btn1-menu.png', '0px', '0px']
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn1-menu.png', '0px', '0px']
                         },
                         {
-                            rect: ['-106', '-1', '110', '32', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tooltip_fs',
                             symbolName: 'tooltip_fs',
-                            type: 'rect'
+                            rect: ['-106', '-1', '110', '32', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -2230,16 +2231,16 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'creditos-img',
                             rect: ['0px', '0px', '22px', '22px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/btn2-menu.png', '0px', '0px']
+                            id: 'creditos-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn2-menu.png', '0px', '0px']
                         },
                         {
-                            type: 'rect',
+                            rect: ['-105', '-3', '110', '32', 'auto', 'auto'],
                             id: 'tooltip_cred',
                             symbolName: 'tooltip_cred',
-                            rect: ['-105', '-3', '110', '32', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -2266,16 +2267,16 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'ayuda-img',
                             rect: ['0px', '0px', '22px', '22px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/btn4-menu.png', '0px', '0px']
+                            id: 'ayuda-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn4-menu.png', '0px', '0px']
                         },
                         {
-                            type: 'rect',
+                            rect: ['-105', '0', '110', '32', 'auto', 'auto'],
                             id: 'tooltip_ayuda',
                             symbolName: 'tooltip_ayuda',
-                            rect: ['-105', '0', '110', '32', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -2302,16 +2303,16 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'audio-img',
                             rect: ['0px', '0px', '23px', '23px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/MH_sonido.png', '0px', '0px']
+                            id: 'audio-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/MH_sonido.png', '0px', '0px']
                         },
                         {
-                            type: 'rect',
+                            rect: ['-106', '0', '110', '32', 'auto', 'auto'],
                             id: 'tooltip_audio',
                             symbolName: 'tooltip_audio',
-                            rect: ['-106', '0', '110', '32', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -2338,16 +2339,16 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'info-img',
                             rect: ['0px', '0px', '22px', '22px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/btn3-menu2.png', '0px', '0px']
+                            id: 'info-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/btn3-menu2.png', '0px', '0px']
                         },
                         {
-                            type: 'rect',
+                            rect: ['-103', '-1', '110', '32', 'auto', 'auto'],
                             id: 'tooltip_info',
                             symbolName: 'tooltip_info',
-                            rect: ['-103', '-1', '110', '32', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -2374,16 +2375,16 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'Acces-img',
                             rect: ['0px', '0px', '23px', '23px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/MH_Accesabilidad.png', '0px', '0px']
+                            id: 'Acces-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/MH_Accesabilidad.png', '0px', '0px']
                         },
                         {
-                            type: 'rect',
+                            rect: ['-103', '0', '110', '32', 'auto', 'auto'],
                             id: 'tooltip_acces',
                             symbolName: 'tooltip_acces',
-                            rect: ['-103', '0', '110', '32', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -2410,12 +2411,12 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.1', '0.1']],
                             rect: ['61px', '0px', '110', '32', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tooltip_fsMov',
                             symbolName: 'tooltip_fsMov',
                             opacity: '0',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.1', '0.1']]
                         }
                     ],
                     style: {
@@ -2439,14 +2440,14 @@
                             '1'
                         ],
                         [
-                            "eid160",
-                            "opacity",
+                            "eid157",
+                            "left",
                             0,
                             300,
                             "easeOutQuart",
                             "${tooltip_fsMov}",
-                            '0',
-                            '1'
+                            '61px',
+                            '0px'
                         ],
                         [
                             "eid158",
@@ -2459,14 +2460,14 @@
                             '1'
                         ],
                         [
-                            "eid157",
-                            "left",
+                            "eid160",
+                            "opacity",
                             0,
                             300,
                             "easeOutQuart",
                             "${tooltip_fsMov}",
-                            '61px',
-                            '0px'
+                            '0',
+                            '1'
                         ]
                     ]
                 }
@@ -2481,19 +2482,19 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'tooltip_fs-img',
                             rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/tooltip_barra_h2.png', '0px', '0px']
+                            id: 'tooltip_fs-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/tooltip_barra_h2.png', '0px', '0px']
                         },
                         {
-                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['8px', '6px', '89px', '13px', 'auto', 'auto'],
+                            align: 'center',
                             id: 'Text6',
                             text: '<p style=\"margin: 0px;\">​Full screen</p>',
-                            align: 'center',
-                            rect: ['8px', '6px', '89px', '13px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -2520,12 +2521,12 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.1', '0.1']],
                             rect: ['60px', '0', '110', '32', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tooltip_credMov',
                             symbolName: 'tooltip_credMov',
                             opacity: '0',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.1', '0.1']]
                         }
                     ],
                     style: {
@@ -2549,16 +2550,6 @@
                             '1'
                         ],
                         [
-                            "eid172",
-                            "scaleX",
-                            0,
-                            290,
-                            "easeOutQuart",
-                            "${tooltip_credMov}",
-                            '0.1',
-                            '1'
-                        ],
-                        [
                             "eid171",
                             "left",
                             0,
@@ -2567,6 +2558,16 @@
                             "${tooltip_credMov}",
                             '60px',
                             '0px'
+                        ],
+                        [
+                            "eid172",
+                            "scaleX",
+                            0,
+                            290,
+                            "easeOutQuart",
+                            "${tooltip_credMov}",
+                            '0.1',
+                            '1'
                         ],
                         [
                             "eid173",
@@ -2591,19 +2592,19 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'tooltip_cred-img',
                             rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/tooltip_barra_h3.png', '0px', '0px']
+                            id: 'tooltip_cred-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/tooltip_barra_h3.png', '0px', '0px']
                         },
                         {
-                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['10px', '7px', '87px', '13px', 'auto', 'auto'],
+                            align: 'center',
                             id: 'Text7',
                             text: '<p style=\"margin: 0px;\">​Créditos</p>',
-                            align: 'center',
-                            rect: ['10px', '7px', '87px', '13px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -2630,12 +2631,12 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.1', '0.1']],
                             rect: ['60px', '0', '110', '32', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tooltip_ayudaMov',
                             symbolName: 'tooltip_ayudaMov',
                             opacity: '0',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.1', '0.1']]
                         }
                     ],
                     style: {
@@ -2701,19 +2702,19 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'tooltip_ayuda-img',
                             rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/tooltip_barra_h4.png', '0px', '0px']
+                            id: 'tooltip_ayuda-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/tooltip_barra_h4.png', '0px', '0px']
                         },
                         {
-                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['8px', '6px', '88px', '14px', 'auto', 'auto'],
+                            align: 'center',
                             id: 'Text8',
                             text: '<p style=\"margin: 0px;\">​Ayuda</p>',
-                            align: 'center',
-                            rect: ['8px', '6px', '88px', '14px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -2740,12 +2741,12 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.1', '0.1']],
                             rect: ['0px', '0', '110', '32', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tooltip_audioMov',
                             symbolName: 'tooltip_audioMov',
                             opacity: '0',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.1', '0.1']]
                         }
                     ],
                     style: {
@@ -2779,8 +2780,8 @@
                             '1'
                         ],
                         [
-                            "eid198",
-                            "scaleY",
+                            "eid197",
+                            "scaleX",
                             0,
                             290,
                             "easeOutQuart",
@@ -2789,8 +2790,8 @@
                             '1'
                         ],
                         [
-                            "eid197",
-                            "scaleX",
+                            "eid198",
+                            "scaleY",
                             0,
                             290,
                             "easeOutQuart",
@@ -2811,19 +2812,19 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'tooltip_audio-img',
                             rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/tooltip_barra_h5.png', '0px', '0px']
+                            id: 'tooltip_audio-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/tooltip_barra_h5.png', '0px', '0px']
                         },
                         {
-                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['8px', '6px', '90px', '14px', 'auto', 'auto'],
+                            align: 'center',
                             id: 'Text9',
                             text: '<p style=\"margin: 0px;\">​Audio</p>',
-                            align: 'center',
-                            rect: ['8px', '6px', '90px', '14px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -2850,12 +2851,12 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.1', '0.1']],
                             rect: ['60px', '0', '110', '32', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tooltip_infoMov',
                             symbolName: 'tooltip_infoMov',
                             opacity: '0',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.1', '0.1']]
                         }
                     ],
                     style: {
@@ -2879,14 +2880,14 @@
                             '1'
                         ],
                         [
-                            "eid209",
-                            "left",
+                            "eid215",
+                            "opacity",
                             0,
                             290,
                             "easeOutQuart",
                             "${tooltip_infoMov}",
-                            '60px',
-                            '0px'
+                            '0',
+                            '1'
                         ],
                         [
                             "eid214",
@@ -2899,14 +2900,14 @@
                             '1'
                         ],
                         [
-                            "eid215",
-                            "opacity",
+                            "eid209",
+                            "left",
                             0,
                             290,
                             "easeOutQuart",
                             "${tooltip_infoMov}",
-                            '0',
-                            '1'
+                            '60px',
+                            '0px'
                         ]
                     ]
                 }
@@ -2921,19 +2922,19 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'tooltip_info-img',
                             rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/tooltip_barra_h6.png', '0px', '0px']
+                            id: 'tooltip_info-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/tooltip_barra_h6.png', '0px', '0px']
                         },
                         {
-                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['8px', '6px', '89px', '15px', 'auto', 'auto'],
+                            align: 'center',
                             id: 'Text10',
                             text: '<p style=\"margin: 0px;\">​Información</p>',
-                            align: 'center',
-                            rect: ['8px', '6px', '89px', '15px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -2960,12 +2961,12 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.1', '0.1']],
                             rect: ['60px', '0', '110', '32', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'tooltip_accesMov',
                             symbolName: 'tooltip_accesMov',
                             opacity: '0',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.1', '0.1']]
                         }
                     ],
                     style: {
@@ -2979,16 +2980,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid226",
-                            "scaleY",
-                            0,
-                            290,
-                            "easeOutQuart",
-                            "${tooltip_accesMov}",
-                            '0.1',
-                            '1'
-                        ],
-                        [
                             "eid224",
                             "left",
                             0,
@@ -2997,6 +2988,16 @@
                             "${tooltip_accesMov}",
                             '60px',
                             '0px'
+                        ],
+                        [
+                            "eid226",
+                            "scaleY",
+                            0,
+                            290,
+                            "easeOutQuart",
+                            "${tooltip_accesMov}",
+                            '0.1',
+                            '1'
                         ],
                         [
                             "eid225",
@@ -3031,19 +3032,19 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'tooltip_acces-img',
                             rect: ['0px', '0px', '110px', '32px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/tooltip_barra_h7.png', '0px', '0px']
+                            id: 'tooltip_acces-img',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/plantilla/tooltip_barra_h7.png', '0px', '0px']
                         },
                         {
-                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['7px', '6px', '91px', '15px', 'auto', 'auto'],
+                            align: 'center',
                             id: 'Text11',
                             text: '<p style=\"margin: 0px;\">​Accesibilidad</p>',
-                            align: 'center',
-                            rect: ['7px', '6px', '91px', '15px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [11, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -3074,11 +3075,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​<span style=\"color: rgb(2, 105, 112);\">Sensibilización de apertura</span></p>',
                             rect: ['211px', '165px', '597px', '118px', 'auto', 'auto'],
-                            id: 'Text',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text'
                         }
                     ],
                     style: {
@@ -3148,11 +3149,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​<span style=\"color: rgb(158, 1, 1);\">Contextualización</span></p>',
                             rect: ['147px', '161px', '750px', '87px', 'auto', 'auto'],
-                            id: 'Text2',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text2'
                         }
                     ],
                     style: {
@@ -3222,11 +3223,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​Contenidos / actividades</p>',
                             rect: ['152px', '148px', '706px', '139px', 'auto', 'auto'],
-                            id: 'Text3',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(120,0,148,1.00)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(120,0,148,1.00)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text3'
                         }
                     ],
                     style: {
@@ -3296,11 +3297,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​Recordemos</p>',
                             rect: ['229px', '142px', '593px', '116px', 'auto', 'auto'],
-                            id: 'Text4',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1.00)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1.00)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text4'
                         }
                     ],
                     style: {
@@ -3370,11 +3371,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​<span style=\"color: rgb(0, 79, 42);\">Preguntas de conocimiento</span></p>',
                             rect: ['134px', '166px', '809px', '75px', 'auto', 'auto'],
-                            id: 'Text5',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text5'
                         }
                     ],
                     style: {
@@ -3444,11 +3445,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​<span style=\"color: rgb(0, 144, 36);\">Sensibilización de cierre</span></p>',
                             rect: ['153px', '161px', '701px', '130px', 'auto', 'auto'],
-                            id: 'Text6',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text6'
                         }
                     ],
                     style: {
@@ -3482,8 +3483,8 @@
                             'block'
                         ],
                         [
-                            "eid284",
-                            "scaleX",
+                            "eid285",
+                            "scaleY",
                             40,
                             460,
                             "easeOutQuart",
@@ -3492,8 +3493,8 @@
                             '1'
                         ],
                         [
-                            "eid285",
-                            "scaleY",
+                            "eid284",
+                            "scaleX",
                             40,
                             460,
                             "easeOutQuart",
@@ -3518,11 +3519,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​PDF descargable / imprimible</p>',
                             rect: ['133px', '169px', '806px', '154px', 'auto', 'auto'],
-                            id: 'Text7',
+                            transform: [[], [], [], ['0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,69,111,1)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text7'
                         }
                     ],
                     style: {
@@ -3546,26 +3547,6 @@
                             '1'
                         ],
                         [
-                            "eid288",
-                            "display",
-                            0,
-                            0,
-                            "easeOutQuart",
-                            "${Text7}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid289",
-                            "display",
-                            40,
-                            0,
-                            "easeOutQuart",
-                            "${Text7}",
-                            'none',
-                            'block'
-                        ],
-                        [
                             "eid291",
                             "scaleY",
                             40,
@@ -3584,6 +3565,26 @@
                             "${Text7}",
                             '1',
                             '1'
+                        ],
+                        [
+                            "eid288",
+                            "display",
+                            0,
+                            0,
+                            "easeOutQuart",
+                            "${Text7}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid289",
+                            "display",
+                            40,
+                            0,
+                            "easeOutQuart",
+                            "${Text7}",
+                            'none',
+                            'block'
                         ]
                     ]
                 }
@@ -3602,11 +3603,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​Bibliografía</p>',
                             rect: ['181px', '168px', '693px', '122px', 'auto', 'auto'],
-                            id: 'Text9',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,143,31,1.00)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,143,31,1.00)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text9'
                         }
                     ],
                     style: {
@@ -3676,11 +3677,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​Glosario</p>',
                             rect: ['252px', '158px', '501px', '96px', 'auto', 'auto'],
-                            id: 'Text10',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,143,31,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,143,31,1)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text10'
                         }
                     ],
                     style: {
@@ -3693,6 +3694,26 @@
                     duration: 500,
                     autoPlay: true,
                     data: [
+                        [
+                            "eid312",
+                            "scaleY",
+                            40,
+                            460,
+                            "easeOutQuart",
+                            "${Text10}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid311",
+                            "scaleX",
+                            40,
+                            460,
+                            "easeOutQuart",
+                            "${Text10}",
+                            '0',
+                            '1'
+                        ],
                         [
                             "eid305",
                             "display",
@@ -3712,26 +3733,6 @@
                             "${Text10}",
                             'none',
                             'block'
-                        ],
-                        [
-                            "eid311",
-                            "scaleX",
-                            40,
-                            460,
-                            "easeOutQuart",
-                            "${Text10}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid312",
-                            "scaleY",
-                            40,
-                            460,
-                            "easeOutQuart",
-                            "${Text10}",
-                            '0',
-                            '1'
                         ]
                     ]
                 }
@@ -3750,11 +3751,11 @@
                             align: 'center',
                             text: '<p style=\"margin: 0px;\">​Mapa conceptual</p>',
                             rect: ['248px', '175px', '599px', '81px', 'auto', 'auto'],
-                            id: 'Text11',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
-                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,143,31,1)', '400', 'none', 'normal', 'break-word', 'normal'],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            font: ['source-sans-pro, sans-serif', [49, 'px'], 'rgba(0,143,31,1)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text11'
                         }
                     ],
                     style: {
@@ -3846,25 +3847,25 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '1080px', '600px', 'auto', 'auto'],
-                            opacity: '0.75',
-                            id: 'opacidad_negro',
                             stroke: [0, 'rgba(0,0,0,0.00)', 'none'],
+                            id: 'opacidad_negro',
+                            opacity: '0.75',
                             type: 'rect',
                             fill: ['rgba(0,0,0,1.00)']
                         },
                         {
-                            rect: ['24', '59', '1032', '394', 'auto', 'auto'],
+                            type: 'rect',
                             display: 'none',
                             symbolName: 'popup_contenido_1',
-                            id: 'popup_contenido_1',
-                            type: 'rect'
+                            rect: ['24', '59', '1032', '394', 'auto', 'auto'],
+                            id: 'popup_contenido_1'
                         },
                         {
-                            rect: ['24', '59', '1032', '541', 'auto', 'auto'],
+                            type: 'rect',
                             display: 'none',
                             symbolName: 'poup_contenido_2',
-                            id: 'poup_contenido_2',
-                            type: 'rect'
+                            rect: ['24', '59', '1032', '541', 'auto', 'auto'],
+                            id: 'poup_contenido_2'
                         }
                     ],
                     style: {
