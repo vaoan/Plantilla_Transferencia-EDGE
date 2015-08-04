@@ -1,0 +1,14 @@
+[0804/092923:ERROR:gpu_info_collector_win.cc(102)] Can't retrieve a valid WinSAT assessment.
+[0804/092934:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0804/092934:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0804/092934:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0804/092935:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0804/092935:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0804/092935:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0804/092935:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0804/092937:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0804/092937:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0804/092944:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0804/092944:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0804/092944:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0804/092951:ERROR:ipc_channel_win.cc(132)] pipe error: 109

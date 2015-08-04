@@ -49,57 +49,53 @@ var audio = new Audio('sounds/snap.mp3');
         }
     }
 
-    function preload() {
-
-    }
-
-    function unset_preload() {
-
-    }
-
-    function call_pop_muybien() {
+    function close_popup() {
         var sym = plantilla_sym;
-        //sym.getComposition().getStage().$("contenedor_popup").show();
-        //EC.loadComposition("compositions/MuyBienPopup/muyBien_edge.html", sym.getSymbol("contened_contenidos"));
-
-        EC.loadComposition("compositions/MuyBienPopup/muyBien_edge.html", sym.getSymbol("contened_home"));
-        
-
+        sym.getSymbol("contenedor_popup").$("popup_contenido_2").hide();
+        sym.getSymbol("contenedor_popup").$("popup_contenido_1").hide();
+        sym.$("contenedor_popup").hide();
     }
 
-
+    function call_pop_creditos() {
+        var sym = plantilla_sym;
+        sym.$("contenedor_popup").show();
+        sym.getSymbol("contenedor_popup").$("popup_contenido_2").show();
+        EC.loadComposition("compositions/popup_creditos/popup_creditos.html",
+                sym.getSymbol("contenedor_popup").$("popup_contenido_2"));
+    }
 
     $("body").on("EDGE_Container_loaded", function (evt) {
         plantilla_sym = evt.sym;
-
-        //$("[id*=btn]").not("[id*=tooltip], [id*=menu-desp]").hover(play_buttons);
-        //console.log($("[id*=btn]"));
-
-        $("body").on("EDGE_Plantilla_click", function (evt) {
-            console.log(evt);
-            switch (evt.evt.currentTarget.id) {
-                case "Stage_barra_herramientas_barra_herramientasMov_btn_fullscreen":
-                    fullscreen();
-                    break;
-                case "Stage_barra_herramientas_barra_herramientasMov_btn_creditos":
-                    call_pop_muybien();
-                    break;
-                case "Stage_barra_herramientas_barra_herramientasMov_btn_ayudas":
-                    break;
-                case "Stage_barra_herramientas_barra_herramientasMov_btn_audio":
-                    play_general_sound = !play_general_sound;
-                    break;
-                case "Stage_barra_herramientas_barra_herramientasMov_btn_info":
-                    break;
-                case "Stage_barra_herramientas_barra_herramientasMov_btn_acces":
-                    break;
-            }
-
-            play_buttons(evt);
-        });
     });
 
+    $("body").on("Edge_Plantilla_ClosePopup", "iframe", function (evt) {
+        play_buttons();
+        close_popup();
+        console.log("close");
+    });
 
+    $("body").on("EDGE_Plantilla_click", function (evt) {
+        console.log(evt);
+        switch (evt.evt.currentTarget.id) {
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_fullscreen":
+                fullscreen();
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_creditos":
+                call_pop_creditos();
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_ayudas":
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_audio":
+                play_general_sound = !play_general_sound;
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_info":
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_acces":
+                break;
+        }
+
+        play_buttons(evt);
+    });
 
 
 }());

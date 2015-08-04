@@ -11,9 +11,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    //Edge symbol: 'stage'
    (function(symbolName) {
-      
-      
-      
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
          

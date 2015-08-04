@@ -3,10 +3,6 @@
         "url_pages": "compositions"
     },
     "paginas": {
-        "0": {
-            "type": "popup_1",
-            "url": ""
-        },
         "1": {
             "type": "actividad",
             "actividad": "matching",
@@ -20,26 +16,30 @@
         }
     },
     "popups": {
-        "good": "MuyBienPopup/muyBien_edge.html",
-        "symbols": {
-            "titulo": [
-                "muybien_cont",
-                "trans_popup",
-                "titulo",
-                {
-                    "name": "Text2",
-                    "type": "div"
-                }
-            ],
-            "mensaje": [
-                "muybien_cont",
-                "trans_popup",
-                "recuad_texto",
-                {
-                    "name": "Text",
-                    "type": "div"
-                }
-            ]
+        "good": {
+            "url": "MuyBienPopup/muyBien_edge.html",
+            "type" : "popup_mini",
+            "symbols": {
+                "titulo": [
+                    "muybien_cont",
+                    "trans_popup",
+                    "titulo",
+                    {
+                        "name": "Text2",
+                        "type": "div"
+                    }
+                ],
+                "mensaje": [
+                    "muybien_cont",
+                    "trans_popup",
+                    "recuad_texto",
+                    {
+                        "name": "Text",
+                        "type": "div"
+                    }
+                ]
+            }
         }
+
     }
 }

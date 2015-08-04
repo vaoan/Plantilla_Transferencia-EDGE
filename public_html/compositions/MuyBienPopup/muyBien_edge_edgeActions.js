@@ -15,12 +15,12 @@
 
         Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function (sym, e) {
             // Creaton complete
-            
+
         });
         //Edge binding end
 
     })("stage");
-   //Edge symbol end:'stage'
+    //Edge symbol end:'stage'
 
     //=========================================================
 
@@ -37,7 +37,7 @@
         //Edge binding end
 
     })("muybien_cont");
-   //Edge symbol end:'muybien_cont'
+    //Edge symbol end:'muybien_cont'
 
     //=========================================================
 
@@ -54,7 +54,7 @@
         //Edge binding end
 
     })("anim_medalla");
-   //Edge symbol end:'anim_medalla'
+    //Edge symbol end:'anim_medalla'
 
     //=========================================================
 
@@ -76,7 +76,7 @@
         //Edge binding end
 
     })("mov_perp_trofeo");
-   //Edge symbol end:'mov_perp_trofeo'
+    //Edge symbol end:'mov_perp_trofeo'
 
     //=========================================================
 
@@ -93,7 +93,7 @@
         //Edge binding end
 
     })("brillitos");
-   //Edge symbol end:'brillitos'
+    //Edge symbol end:'brillitos'
 
     //=========================================================
 
@@ -108,7 +108,7 @@
         //Edge binding end
 
     })("recuad_texto");
-   //Edge symbol end:'recuad_texto'
+    //Edge symbol end:'recuad_texto'
 
     //=========================================================
 
@@ -122,40 +122,46 @@
         });
         //Edge binding end
 
-        
 
-      Symbol.bindElementAction(compId, symbolName, "${btn_cerrar}", "click", function(sym, e) {
-         // introducir aquí código para clic de ratón
-         
-      });
-      //Edge binding end
 
-    })("trans_popup");
-   //Edge symbol end:'trans_popup'
-
-   //=========================================================
-   
-   //Edge symbol: 'btn_cerrar'
-   (function(symbolName) {   
-   
-      Symbol.bindElementAction(compId, symbolName, "${cerrar}", "click", function (sym, e) {
+        Symbol.bindElementAction(compId, symbolName, "${btn_cerrar}", "click", function (sym, e) {
             // introducir aquí código para clic de ratón
-            // Ocultar un elemento 
-            sym.getComposition().getStage().$("muybien_cont").hide();
-
 
         });
-           //Edge binding end
+        //Edge binding end
 
-   })("btn_cerrar");
-   //Edge symbol end:'btn_cerrar'
+    })("trans_popup");
+    //Edge symbol end:'trans_popup'
 
-   //=========================================================
-   
-   //Edge symbol: 'titulo'
-   (function(symbolName) {   
-   
-   })("titulo");
-   //Edge symbol end:'titulo'
+    //=========================================================
+
+    //Edge symbol: 'btn_cerrar'
+    (function (symbolName) {
+
+        Symbol.bindElementAction(compId, symbolName, "${cerrar}", "click", function (sym, e) {
+            // introducir aquí código para clic de ratón
+            // Ocultar un elemento 
+            $("body").trigger({
+                type: 'Edge_Plantilla_ClosePopup',
+                sym: sym,
+                evt: e
+            });
+            // Ocultar un elemento 
+            sym.getSymbolElement().hide();
+            
+
+        });
+        //Edge binding end
+
+    })("btn_cerrar");
+    //Edge symbol end:'btn_cerrar'
+
+    //=========================================================
+
+    //Edge symbol: 'titulo'
+    (function (symbolName) {
+
+    })("titulo");
+    //Edge symbol end:'titulo'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-29934699");
