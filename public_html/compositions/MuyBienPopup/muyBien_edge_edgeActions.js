@@ -150,4 +150,12 @@
    })("btn_cerrar");
    //Edge symbol end:'btn_cerrar'
 
+   //=========================================================
+   
+   //Edge symbol: 'titulo'
+   (function(symbolName) {   
+   
+   })("titulo");
+   //Edge symbol end:'titulo'
+
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-29934699");

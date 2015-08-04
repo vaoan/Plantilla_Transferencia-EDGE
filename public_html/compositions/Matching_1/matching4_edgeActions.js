@@ -20,7 +20,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          //$('#Stage_contenedor_padre').sortable();
          //sym.$('contenedor_padre').sortable();
          $('body').trigger({
-            type: 'enviar',
+            type: 'ed_activity_enviar',
             sym: sym
          });         
       });

@@ -3,6 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/* global EC */
+
+//<editor-fold defaultstate="collapsed" desc="Global values">
 var play_general_sound = true;
 var plantilla_sym;
 var debug = true;
@@ -26,6 +29,7 @@ ion.sound({
     preload: true
 });
 var audio = new Audio('sounds/snap.mp3');
+//</editor-fold>
 
 (function () {
 

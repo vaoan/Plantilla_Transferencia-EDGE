@@ -200,764 +200,172 @@
 
         Symbol.bindElementAction(compId, symbolName, "${leyendo}", "click", function (sym, e) {
             // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_apertura").play();
+            //sym.getSymbol("contened_apertura").play();
 
             // Mostrar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_biblio").stop(0);
             sym.getSymbol("libros").$("estado_bordelibro").hide();
-
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
 
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${sol}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_contextual").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("sol").$("estado_borde2").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
+            sym.getSymbol("sol").$("estado_borde2").show();
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-
-
-
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-
-            sym.getSymbol("contened_biblio").stop(0);
             sym.getSymbol("libros").$("estado_bordelibro").hide();
-
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
-
 
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${papelera}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_contenidos").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("papelera").$("estado_borde3").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
+            sym.getSymbol("papelera").$("estado_borde3").show();
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
+            sym.getSymbol("docum").$("estado_borde5").hide();
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-
-
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-
-            sym.getSymbol("contened_biblio").stop(0);
             sym.getSymbol("libros").$("estado_bordelibro").hide();
-
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${pensar}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contenedor_recordemos").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("pensar").$("estado_borde4").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-
-            // Ocultar un elemento 
+            sym.getSymbol("pensar").$("estado_borde4").show();
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-
-
-
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-
-            sym.getSymbol("contened_biblio").stop(0);
             sym.getSymbol("libros").$("estado_bordelibro").hide();
-
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
-
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${docum}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contend_preguntas").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("docum").$("estado_borde5").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
+            sym.getSymbol("docum").$("estado_borde5").show();
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-
-
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-
-            sym.getSymbol("contened_biblio").stop(0);
             sym.getSymbol("libros").$("estado_bordelibro").hide();
-
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${hablar}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_cierre").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("hablar").$("estado_borde6").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
+            sym.getSymbol("hablar").$("estado_borde6").show();
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-
-            sym.getSymbol("contened_biblio").stop(0);
             sym.getSymbol("libros").$("estado_bordelibro").hide();
-
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
-
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${pdf}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_PDF").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("pdf").$("estado_bordePDF").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            sym.getSymbol("contened_biblio").stop(0);
+            sym.getSymbol("pdf").$("estado_bordePDF").show();
             sym.getSymbol("libros").$("estado_bordelibro").hide();
-
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
 
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${libros}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_biblio").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("libros").$("estado_bordelibro").show();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-
+            sym.getSymbol("libros").$("estado_bordelibro").show();
             sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-            sym.getSymbol("contened_glos").stop(0);
-
-
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
-
-
-
-
-
-
-
-
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${libroA2}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_glos").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("libroA2").$("estado_bordeglos").show();
-
-            sym.getSymbol("libros").$("estado_bordelibro").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_biblio").stop(0);
-
+            sym.getSymbol("libros").$("estado_bordelibro").hide();
+            sym.getSymbol("libroA2").$("estado_bordeglos").show();
             sym.getSymbol("mapa").$("estado_bordemapa").hide();
-            sym.getSymbol("contened_mapa").stop(0);
-
-
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${mapa}", "click", function (sym, e) {
-            // introducir aquí código para clic de ratón
-            sym.getSymbol("contened_mapa").play();
-
             // Mostrar un elemento 
-            sym.getSymbol("mapa").$("estado_bordemapa").show();
-
-            sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-
-            sym.getSymbol("libros").$("estado_bordelibro").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_biblio").stop(0);
-
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_glos").stop(0);
-
-
+            sym.getSymbol("libros").$("estado_bordelibro").hide();
+            sym.getSymbol("libroA2").$("estado_bordeglos").hide();
+            sym.getSymbol("mapa").$("estado_bordemapa").show();
         });
         //Edge binding end
 
         Symbol.bindElementAction(compId, symbolName, "${home}", "click", function (sym, e) {
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_home").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_apertura").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_PDF").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contenidos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_contextual").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_cierre").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contenedor_recordemos").stop(0);
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contend_preguntas").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_biblio").stop(0);
-
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_glos").stop(0);
-
-            // Ir a una etiqueta o a un momento específicos y parar. Por ejemplo:
-            // sym.stop(500); o sym.stop("miEtiqueta");
-            sym.getSymbol("contened_mapa").stop(0);
-
-
             // Mostrar un elemento 
-            sym.getSymbol("mapa").$("estado_bordemapa").hide();
-
-            sym.getSymbol("libroA2").$("estado_bordeglos").hide();
-
-            sym.getSymbol("libros").$("estado_bordelibro").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("sol").$("estado_borde2").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("papelera").$("estado_borde3").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pensar").$("estado_borde4").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("docum").$("estado_borde5").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("hablar").$("estado_borde6").hide();
-
-            // Ocultar un elemento 
             sym.getSymbol("pdf").$("estado_bordePDF").hide();
-
-
-
-
+            sym.getSymbol("libros").$("estado_bordelibro").hide();
+            sym.getSymbol("libroA2").$("estado_bordeglos").hide();
+            sym.getSymbol("mapa").$("estado_bordemapa").hide();
         });
         //Edge binding end
 
@@ -1489,7 +897,7 @@
                 sym: sym,
                 evt: e
             });
-            
+
             //console.log(e);
         });
         //Edge binding end
@@ -1876,12 +1284,20 @@
     })("poup_contenido_2");
    //Edge symbol end:'poup_contenido_2'
 
+    //=========================================================
+
+    //Edge symbol: 'Precargador'
+    (function (symbolName) {
+
+    })("Precargador");
+   //Edge symbol end:'Precargador'
+
    //=========================================================
    
-   //Edge symbol: 'Precargador'
+   //Edge symbol: 'overlay'
    (function(symbolName) {   
    
-   })("Precargador");
-   //Edge symbol end:'Precargador'
+   })("overlay");
+   //Edge symbol end:'overlay'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-5617841");
