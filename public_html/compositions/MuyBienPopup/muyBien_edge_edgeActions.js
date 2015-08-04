@@ -122,16 +122,32 @@
         });
         //Edge binding end
 
-        Symbol.bindElementAction(compId, symbolName, "${cerrar}", "click", function (sym, e) {
+        
+
+      Symbol.bindElementAction(compId, symbolName, "${btn_cerrar}", "click", function(sym, e) {
+         // introducir aquí código para clic de ratón
+         
+      });
+      //Edge binding end
+
+    })("trans_popup");
+   //Edge symbol end:'trans_popup'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_cerrar'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${cerrar}", "click", function (sym, e) {
             // introducir aquí código para clic de ratón
             // Ocultar un elemento 
             sym.getComposition().getStage().$("muybien_cont").hide();
 
 
         });
-        //Edge binding end
+           //Edge binding end
 
-    })("trans_popup");
-   //Edge symbol end:'trans_popup'
+   })("btn_cerrar");
+   //Edge symbol end:'btn_cerrar'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-29934699");

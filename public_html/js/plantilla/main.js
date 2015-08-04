@@ -56,8 +56,11 @@ var audio = new Audio('sounds/snap.mp3');
     function call_pop_muybien() {
         var sym = plantilla_sym;
         //sym.getComposition().getStage().$("contenedor_popup").show();
-        EC.loadComposition("compositions/MuyBienPopup/muyBien_edge.html", sym.getSymbol("contened_contenidos"));
+        //EC.loadComposition("compositions/MuyBienPopup/muyBien_edge.html", sym.getSymbol("contened_contenidos"));
+
+        EC.loadComposition("compositions/MuyBienPopup/muyBien_edge.html", sym.getSymbol("contened_home"));
         
+
     }
 
 

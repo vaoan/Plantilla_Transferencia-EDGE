@@ -61,8 +61,8 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0', '0']],
                             type: 'rect',
+                            transform: [[], [], [], ['0', '0']],
                             display: 'none',
                             symbolName: 'trans_popup',
                             rect: ['0', '0', '678', '314', 'auto', 'auto'],
@@ -71,7 +71,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '678px', '314px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '678px', '314px']
                         }
                     }
                 },
@@ -79,6 +80,16 @@
                     duration: 5050,
                     autoPlay: true,
                     data: [
+                        [
+                            "eid157",
+                            "scaleX",
+                            60,
+                            690,
+                            "easeOutQuart",
+                            "${trans_popup}",
+                            '0',
+                            '1'
+                        ],
                         [
                             "eid152",
                             "display",
@@ -98,16 +109,6 @@
                             "${trans_popup}",
                             'none',
                             'block'
-                        ],
-                        [
-                            "eid157",
-                            "scaleX",
-                            60,
-                            690,
-                            "easeOutQuart",
-                            "${trans_popup}",
-                            '0',
-                            '1'
                         ],
                         [
                             "eid158",
@@ -132,10 +133,10 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0', '0px', '263', '253', 'auto', 'auto'],
                             id: 'mov_perp_trofeo',
                             symbolName: 'mov_perp_trofeo',
-                            rect: ['0', '0px', '263', '253', 'auto', 'auto']
+                            type: 'rect'
                         }
                     ],
                     style: {
@@ -181,30 +182,30 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '261px', '247px', 'auto', 'auto'],
                             transform: [[], [], [], ['0', '0']],
                             type: 'image',
+                            display: 'none',
                             id: 'estrellas',
                             opacity: '0',
-                            display: 'none',
+                            rect: ['0px', '0px', '261px', '247px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/muyBien_popup/estrellas.png', '0px', '0px']
                         },
                         {
-                            rect: ['0px', '0px', '263px', '246px', 'auto', 'auto'],
                             transform: [[], ['270'], [], ['0.1', '0.1']],
                             type: 'image',
+                            display: 'none',
                             id: 'moneda',
                             opacity: '0',
-                            display: 'none',
+                            rect: ['0px', '0px', '263px', '246px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/muyBien_popup/moneda.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.1', '0.1']],
                             rect: ['1', '-7px', '260', '247', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'brillitos',
                             symbolName: 'brillitos',
                             opacity: '0.1',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.1', '0.1']]
                         }
                     ],
                     style: {
@@ -226,6 +227,122 @@
                             "${moneda}",
                             '270deg',
                             '0deg'
+                        ],
+                        [
+                            "eid46",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid49",
+                            "display",
+                            660,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid47",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${estrellas}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid48",
+                            "display",
+                            195,
+                            0,
+                            "linear",
+                            "${estrellas}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid59",
+                            "scaleY",
+                            945,
+                            410,
+                            "easeOutQuart",
+                            "${brillitos}",
+                            '0.1',
+                            '1'
+                        ],
+                        [
+                            "eid33",
+                            "-webkit-transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            [49,65],
+                            [49,65],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109327",
+                            "-moz-transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            [49,65],
+                            [49,65],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109328",
+                            "-ms-transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            [49,65],
+                            [49,65],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109329",
+                            "msTransformOrigin",
+                            0,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            [49,65],
+                            [49,65],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109330",
+                            "-o-transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            [49,65],
+                            [49,65],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109331",
+                            "transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${moneda}",
+                            [49,65],
+                            [49,65],
+                            {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
                             "eid19",
@@ -268,28 +385,124 @@
                             '1'
                         ],
                         [
-                            "eid47",
-                            "display",
+                            "eid45",
+                            "opacity",
+                            660,
+                            470,
+                            "easeOutQuart",
+                            "${moneda}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid60",
+                            "opacity",
+                            945,
+                            410,
+                            "easeOutQuart",
+                            "${brillitos}",
+                            '0.1',
+                            '1'
+                        ],
+                        [
+                            "eid4",
+                            "-webkit-transform-origin",
                             0,
                             0,
                             "linear",
                             "${estrellas}",
-                            'none',
-                            'none'
+                            [50,77],
+                            [50,77],
+                            {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid48",
-                            "display",
-                            195,
+                            "eid109332",
+                            "-moz-transform-origin",
+                            0,
                             0,
                             "linear",
                             "${estrellas}",
-                            'none',
-                            'block'
+                            [50,77],
+                            [50,77],
+                            {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid59",
+                            "eid109333",
+                            "-ms-transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${estrellas}",
+                            [50,77],
+                            [50,77],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109334",
+                            "msTransformOrigin",
+                            0,
+                            0,
+                            "linear",
+                            "${estrellas}",
+                            [50,77],
+                            [50,77],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109335",
+                            "-o-transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${estrellas}",
+                            [50,77],
+                            [50,77],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid109336",
+                            "transform-origin",
+                            0,
+                            0,
+                            "linear",
+                            "${estrellas}",
+                            [50,77],
+                            [50,77],
+                            {valueTemplate: '@@0@@% @@1@@%'}
+                        ],
+                        [
+                            "eid41",
                             "scaleY",
+                            660,
+                            470,
+                            "easeOutQuart",
+                            "${moneda}",
+                            '0.1',
+                            '1'
+                        ],
+                        [
+                            "eid21",
+                            "opacity",
+                            195,
+                            370,
+                            "easeOutQuart",
+                            "${estrellas}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid40",
+                            "scaleX",
+                            660,
+                            470,
+                            "easeOutQuart",
+                            "${moneda}",
+                            '0.1',
+                            '1'
+                        ],
+                        [
+                            "eid58",
+                            "scaleX",
                             945,
                             410,
                             "easeOutQuart",
@@ -336,218 +549,6 @@
                             "${estrellas}",
                             '0.93',
                             '1'
-                        ],
-                        [
-                            "eid46",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid49",
-                            "display",
-                            660,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid40",
-                            "scaleX",
-                            660,
-                            470,
-                            "easeOutQuart",
-                            "${moneda}",
-                            '0.1',
-                            '1'
-                        ],
-                        [
-                            "eid60",
-                            "opacity",
-                            945,
-                            410,
-                            "easeOutQuart",
-                            "${brillitos}",
-                            '0.1',
-                            '1'
-                        ],
-                        [
-                            "eid4",
-                            "-webkit-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${estrellas}",
-                            [50,77],
-                            [50,77],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109277",
-                            "-moz-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${estrellas}",
-                            [50,77],
-                            [50,77],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109278",
-                            "-ms-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${estrellas}",
-                            [50,77],
-                            [50,77],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109279",
-                            "msTransformOrigin",
-                            0,
-                            0,
-                            "linear",
-                            "${estrellas}",
-                            [50,77],
-                            [50,77],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109280",
-                            "-o-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${estrellas}",
-                            [50,77],
-                            [50,77],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109281",
-                            "transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${estrellas}",
-                            [50,77],
-                            [50,77],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid41",
-                            "scaleY",
-                            660,
-                            470,
-                            "easeOutQuart",
-                            "${moneda}",
-                            '0.1',
-                            '1'
-                        ],
-                        [
-                            "eid21",
-                            "opacity",
-                            195,
-                            370,
-                            "easeOutQuart",
-                            "${estrellas}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid45",
-                            "opacity",
-                            660,
-                            470,
-                            "easeOutQuart",
-                            "${moneda}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid58",
-                            "scaleX",
-                            945,
-                            410,
-                            "easeOutQuart",
-                            "${brillitos}",
-                            '0.1',
-                            '1'
-                        ],
-                        [
-                            "eid33",
-                            "-webkit-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            [49,65],
-                            [49,65],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109282",
-                            "-moz-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            [49,65],
-                            [49,65],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109283",
-                            "-ms-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            [49,65],
-                            [49,65],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109284",
-                            "msTransformOrigin",
-                            0,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            [49,65],
-                            [49,65],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109285",
-                            "-o-transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            [49,65],
-                            [49,65],
-                            {valueTemplate: '@@0@@% @@1@@%'}
-                        ],
-                        [
-                            "eid109286",
-                            "transform-origin",
-                            0,
-                            0,
-                            "linear",
-                            "${moneda}",
-                            [49,65],
-                            [49,65],
-                            {valueTemplate: '@@0@@% @@1@@%'}
                         ]
                     ]
                 }
@@ -562,9 +563,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '260px', '247px', 'auto', 'auto'],
-                            id: 'brillos',
                             type: 'image',
+                            id: 'brillos',
+                            rect: ['0px', '0px', '260px', '247px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/muyBien_popup/brillos.png', '0px', '0px']
                         }
                     ],
@@ -634,20 +635,20 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '344px', '203px', 'auto', 'auto'],
-                            id: 'Recuadro',
                             type: 'image',
+                            id: 'Recuadro',
+                            rect: ['0px', '0px', '344px', '203px', 'auto', 'auto'],
                             clip: 'rect(0px 172px 203px 174px)',
                             fill: ['rgba(0,0,0,0)', 'images/muyBien_popup/Recuadro.png', '0px', '0px']
                         },
                         {
-                            font: ['source-sans-pro, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'normal'],
                             type: 'text',
-                            align: 'center',
+                            rect: ['41px', '70px', '262px', '63px', 'auto', 'auto'],
+                            display: 'none',
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\">​Has completado la actividad correctamente</p>',
-                            display: 'none',
-                            rect: ['41px', '70px', '262px', '63px', 'auto', 'auto']
+                            align: 'center',
+                            font: ['source-sans-pro, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -704,43 +705,44 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
                             id: 'ventana',
+                            type: 'image',
                             rect: ['0px', '0px', '678px', '314px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/muyBien_popup/ventana.png', '0px', '0px']
                         },
                         {
-                            type: 'rect',
                             id: 'recuad_texto',
                             symbolName: 'recuad_texto',
-                            rect: ['304px', '81px', '344', '203', 'auto', 'auto']
+                            rect: ['304px', '81px', '344', '203', 'auto', 'auto'],
+                            type: 'rect'
+                        },
+                        {
+                            id: 'anim_medalla',
+                            symbolName: 'anim_medalla',
+                            rect: ['20px', '61px', '263', '253', 'auto', 'auto'],
+                            type: 'rect'
                         },
                         {
                             type: 'rect',
-                            id: 'anim_medalla',
-                            symbolName: 'anim_medalla',
-                            rect: ['20px', '61px', '263', '253', 'auto', 'auto']
-                        },
-                        {
-                            rect: ['633px', '15px', '30px', '30px', 'auto', 'auto'],
-                            id: 'cerrar',
-                            type: 'image',
+                            id: 'btn_cerrar',
+                            symbolName: 'btn_cerrar',
                             cursor: 'pointer',
-                            fill: ['rgba(0,0,0,0)', 'images/muyBien_popup/cerrar.png', '0px', '0px']
+                            rect: ['633', '15', '30', '30', 'auto', 'auto']
                         },
                         {
-                            type: 'text',
                             rect: ['26px', '10px', '344px', '46px', 'auto', 'auto'],
-                            text: '<p style=\"margin: 0px;\">¡Muy bien!</p>',
-                            id: 'Text2',
                             textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [33, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'Text2',
+                            text: '<p style=\"margin: 0px;\">¡Muy bien!</p>',
                             align: 'left',
-                            font: ['source-sans-pro, sans-serif', [33, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'normal']
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '678px', '314px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '678px', '314px']
                         }
                     }
                 },
@@ -750,6 +752,38 @@
                     data: [
                             [ "eid285", "trigger", 0, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${recuad_texto}', [] ] ],
                             [ "eid286", "trigger", 250, function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['play', '${recuad_texto}', [] ] ]
+                    ]
+                }
+            },
+            "btn_cerrar": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '30px', '30px', 'auto', 'auto'],
+                            id: 'cerrar',
+                            type: 'image',
+                            cursor: 'pointer',
+                            fill: ['rgba(0,0,0,0)', 'images/muyBien_popup/cerrar.png', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '30px', '30px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
                     ]
                 }
             }
