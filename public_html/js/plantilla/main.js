@@ -69,7 +69,7 @@ ion.sound({
         sym.getSymbol("contenedor_popup").$("popup_contenido_1").hide();
         sym.$("contenedor_popup").hide();
     }
-    
+
     function buscar_sym(sym, arrSymSearch) {
         var temp = sym;
         $.each(arrSymSearch, function (index, value) {
@@ -91,6 +91,66 @@ ion.sound({
         close_popup();
         EDGE_Plantilla.debug ? console.log("close") : false;
         EDGE_Plantilla.popup_on_show = null;
+    });
+    //</editor-fold>
+
+    //<editor-fold defaultstate="collapsed" desc="Controles de la plantilla">
+    $("body").on("EDGE_Self_Plantilla_ClickMenuTools", function (evt) {
+        EDGE_Plantilla.debug ? console.log(evt) : false;
+        EDGE_Plantilla.debug ? console.log(evt.evt.currentTarget.id) : false;
+        switch (evt.evt.currentTarget.id) {
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_fullscreen":
+                fullscreen();
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_creditos":
+                mostrar_popup("creditos");
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_ayudas":
+                mostrar_popup("ayudas");
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_audio":
+                EDGE_Plantilla.play_general_sound = !EDGE_Plantilla.play_general_sound;
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_info":
+                mostrar_popup("info");
+                break;
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_acces":
+                mostrar_popup("muy_bien", {mensaje: "¡Esto está BIEN!", titulo: "Excelente"});
+                break;
+        }
+
+        play_buttons(evt);
+    });
+
+    $("body").on("EDGE_Self_Plantilla_ClickNav", function (evt) {
+        EDGE_Plantilla.debug ? console.log(evt) : false;
+        EDGE_Plantilla.debug ? console.log(evt.evt.currentTarget.id) : false;
+        switch (evt.evt.currentTarget.id) {
+            case "Stage_home":
+                break;
+            case "Stage_libros":
+                break;
+            case "Stage_libroA2":
+                break;
+            case "Stage_mapa":
+                break;
+            case "Stage_leyendo":
+                mostrar_pagina("2");
+                break;
+            case "Stage_sol":
+                break;
+            case "Stage_papelera":
+                break;
+            case "Stage_pensar":
+                break;
+            case "Stage_docum":
+                break;
+            case "Stage_hablar":
+                break;
+            case "Stage_pdf":
+                break;
+        }
+        play_buttons(evt);
     });
     //</editor-fold>
 
@@ -120,12 +180,16 @@ ion.sound({
 
         EDGE_Plantilla.popup_on_show = popup;
 
-        if (!isEmpty(objRetro)) {
-            $.each(objRetro, function (index, value) {
-                if (!popup.symbols.hasOwnProperty(index)) {
-                    delete popup.symbols[index];
-                }
-            });
+        if (!isEmpty(popup.symbols)) {
+            if (!isEmpty(objRetro)) {
+                $.each(objRetro, function (index, value) {
+                    if (!popup.symbols.hasOwnProperty(index)) {
+                        delete popup.symbols[index];
+                    }
+                });
+            }
+        } else {
+            objRetro = null;
         }
 
         sym.$("contenedor_popup").show();
@@ -150,90 +214,151 @@ ion.sound({
         });
 
     }
-    
-    $(document).on("EDGE_Plantilla_CreationComplete", function (evt) {
+
+    function mostrar_pagina(strPagina, objRetro) {
+        //EDGE_Plantilla.config
+        var sym = EDGE_Plantilla.plantilla_sym;
+
+        if (!EDGE_Plantilla.config.paginas.hasOwnProperty(strPagina)) {
+            console.error(strPagina, EDGE_Plantilla.config.popup, "PAGINA No encontrado");
+            return false;
+        }
+        var pagina = EDGE_Plantilla.config.paginas[strPagina];
+
+        var sym_contenedor = sym.getSymbol("contened_home");
+
+        EDGE_Plantilla.recurso_on_show = pagina;
+
+        if (!isEmpty(pagina.symbols)) {
+            if (!isEmpty(objRetro)) {
+                $.each(objRetro, function (index, value) {
+                    if (!pagina.symbols.hasOwnProperty(index)) {
+                        delete pagina.symbols[index];
+                    }
+                });
+            }
+        } else {
+            objRetro = null;
+        }
+
+        switch (pagina.type) {
+            case "actividad":
+            case "activity":
+
+                var actividad =
+                        EDGE_Plantilla.config.actividades[pagina.actividad];
+                if (isEmpty(actividad)) {
+                    console.error(pagina, "ACTIVIDAD no encontrada");
+                    return false;
+                } else {
+                    EDGE_Plantilla.debug ? console.log(actividad, "Actividad found") : false;
+                    pagina.actividad = actividad;
+                    pagina.url = actividad.url;
+                }
+
+                break;
+        }
+
+        EDGE_Plantilla.debug ? console.log(strPagina, objRetro, pagina) : false;
+
+        // Load Third Composition and inject data
+        var promise = EC.loadComposition(EDGE_Plantilla.config.default.url_pages + pagina.url,
+                sym_contenedor);
+
+        promise.done(function (comp) {
+            var stage = comp.getStage();
+            if (!isEmpty(objRetro)) {
+                $.each(objRetro, function (index, value) {
+                    var arrSymSearch = pagina.symbols[index];
+                    var symFound = buscar_sym(stage, arrSymSearch);
+                    console.log(typeof value);
+                    if (typeof value === "string") {
+                        $(symFound.ele).find("p").text(value);
+                    }
+                });
+            }
+        });
+
+    }
+
+    /* El POPUP envía un evento a la plantilla informando que ya está creado 
+     * y está listo para recibir su estado inicial
+     */
+    $(document).on("EDGE_Plantilla_CreationCompletePop", function (evt) {
         EDGE_Plantilla.debug ? console.log("listen") : false;
         var popup = EDGE_Plantilla.popup_on_show;
         var sym = EDGE_Plantilla.plantilla_sym;
-        
+
         var sym_contenedor;
 
         switch (popup.type) {
             case "popup_mini":
-                sym_contenedor = sym.getSymbol("contenedor_popup").$("popup_contenido_2");
+                sym_contenedor = sym.getSymbol("contenedor_popup").getSymbol("popup_contenido_2");
                 break;
             case "popup_full":
-                sym_contenedor = sym.getSymbol("contenedor_popup").$("popup_contenido_2");
+                sym_contenedor = sym.getSymbol("contenedor_popup").getSymbol("popup_contenido_2");
                 break;
             default:
                 console.error(popup.type, "POPUP tipo incorrecto");
                 return false;
                 break;
         }
-        
+
         EDGE_Plantilla.debug ? console.log(sym_contenedor) : false;
-        
-        $('iframe', sym_contenedor)[0].contentWindow.$('body').trigger({
+
+        $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger({
             type: 'EDGE_PopUp_CreationResponse',
             sym: evt.sym,
-            identify: popup
+            identify: EDGE_Plantilla.popup_on_show
         });
     });
 
-    $("body").on("EDGE_Self_Plantilla_ClickMenuTools", function (evt) {
-        EDGE_Plantilla.debug ? console.log(evt) : false;
-        EDGE_Plantilla.debug ? console.log(evt.evt.currentTarget.id) : false;
-        switch (evt.evt.currentTarget.id) {
-            case "Stage_barra_herramientas_barra_herramientasMov_btn_fullscreen":
-                fullscreen();
-                break;
-            case "Stage_barra_herramientas_barra_herramientasMov_btn_creditos":
-                mostrar_popup("creditos");
-                break;
-            case "Stage_barra_herramientas_barra_herramientasMov_btn_ayudas":
-                mostrar_popup("ayudas");
-                break;
-            case "Stage_barra_herramientas_barra_herramientasMov_btn_audio":
-                EDGE_Plantilla.play_general_sound = !EDGE_Plantilla.play_general_sound;
-                break;
-            case "Stage_barra_herramientas_barra_herramientasMov_btn_info":
-                mostrar_popup("info");
-                break;
-            case "Stage_barra_herramientas_barra_herramientasMov_btn_acces":
-                mostrar_popup("muy_bien", {mensaje: "¡Esto está BIEN!", titulo : "Excelente"});
-                break;
-        }
+    /* El recurso envía un evento a la plantilla informando que ya está creado 
+     * y está listo para recibir su estado inicial
+     */
 
-        play_buttons(evt);
+    $(document).on("EDGE_Plantilla_creationComplete", function (evt) {
+        var sym = EDGE_Plantilla.plantilla_sym;
+        var sym_contenedor = sym.getSymbol("contened_home");
+
+        EDGE_Plantilla.debug ? console.log(evt) : false;
+        EDGE_Plantilla.debug ? console.log($('iframe', sym_contenedor.ele)[0], sym_contenedor) : false;
+
+        // previous_data debe ser interpretado del scorm
+        $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger({
+            type: "EDGE_Recurso_sendPreviousData",
+            block: false,
+            previous_data: {"DROP_1_(Un cuadro azul)": ["DRAG_2_(bola verde)"], "DROP_2_(Un cuadro rojo)": ["DRAG_1_(bola rosada)"]},
+            sym: evt.sym,
+            identify: EDGE_Plantilla.recurso_on_show
+        });
     });
 
-    $("body").on("EDGE_Self_Plantilla_ClickNav", function (evt) {
+    /* El recurso ha enviado una petición de Submit, la plantilla debe decidir
+     * que hacer con este request y enviarle una respuesta para que reaccione
+     */
+    $(document).on("EDGE_Plantilla_submitApplied", function (evt) {
         EDGE_Plantilla.debug ? console.log(evt) : false;
-        EDGE_Plantilla.debug ? console.log(evt.evt.currentTarget.id) : false;
-        switch (evt.evt.currentTarget.id) {
-            case "Stage_home":
-                break;
-            case "Stage_libros":
-                break;
-            case "Stage_libroA2":
-                break;
-            case "Stage_mapa":
-                break;
-            case "Stage_leyendo":
-                break;
-            case "Stage_sol":
-                break;
-            case "Stage_papelera":
-                break;
-            case "Stage_pensar":
-                break;
-            case "Stage_docum":
-                break;
-            case "Stage_hablar":
-                break;
-            case "Stage_pdf":
-                break;
+        
+        var sym = EDGE_Plantilla.plantilla_sym;
+        var sym_contenedor = sym.getSymbol("contened_home");
+
+        var this_block = false;
+        var this_show_answers = false;
+
+        var intentos = evt.attempts + 1;
+        if (intentos >= evt.attempts_limit) {
+            this_block = true;
+            this_show_answers = true;
         }
-        play_buttons(evt);
+
+        $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger({
+            type: "EDGE_Recurso_postSubmitApplied",
+            block: this_block,
+            show_answers: this_show_answers,
+            attempts: intentos,
+            sym: evt.sym
+        });
     });
+
 }());

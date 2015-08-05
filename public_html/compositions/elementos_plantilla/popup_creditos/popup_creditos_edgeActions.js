@@ -17,7 +17,7 @@
             // Insertar código para ejecutarse cuando el símbolo se crea aquí
             console.log("send");
             parent.$(parent.document).trigger({
-                type: 'EDGE_Plantilla_CreationComplete',
+                type: 'EDGE_Plantilla_CreationCompletePop',
                 sym: sym,
                 evt: e
             });
