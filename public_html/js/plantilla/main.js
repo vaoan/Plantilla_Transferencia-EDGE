@@ -105,7 +105,7 @@ ion.sound({
             case "Stage_barra_herramientas_barra_herramientasMov_btn_creditos":
                 mostrar_popup("creditos");
                 break;
-            case "Stage_barra_herramientas_barra_herramientasMov_btn_ayudas":
+            case "Stage_barra_herramientas_barra_herramientasMov_btn_ayuda":
                 mostrar_popup("ayudas");
                 break;
             case "Stage_barra_herramientas_barra_herramientasMov_btn_audio":
@@ -154,6 +154,7 @@ ion.sound({
     });
     //</editor-fold>
 
+    //<editor-fold defaultstate="collapsed" desc="Popups">
     function mostrar_popup(strPopup, objRetro) {
         //EDGE_Plantilla.config
         var sym = EDGE_Plantilla.plantilla_sym;
@@ -215,72 +216,6 @@ ion.sound({
 
     }
 
-    function mostrar_pagina(strPagina, objRetro) {
-        //EDGE_Plantilla.config
-        var sym = EDGE_Plantilla.plantilla_sym;
-
-        if (!EDGE_Plantilla.config.paginas.hasOwnProperty(strPagina)) {
-            console.error(strPagina, EDGE_Plantilla.config.popup, "PAGINA No encontrado");
-            return false;
-        }
-        var pagina = EDGE_Plantilla.config.paginas[strPagina];
-
-        var sym_contenedor = sym.getSymbol("contened_home");
-
-        EDGE_Plantilla.recurso_on_show = pagina;
-
-        if (!isEmpty(pagina.symbols)) {
-            if (!isEmpty(objRetro)) {
-                $.each(objRetro, function (index, value) {
-                    if (!pagina.symbols.hasOwnProperty(index)) {
-                        delete pagina.symbols[index];
-                    }
-                });
-            }
-        } else {
-            objRetro = null;
-        }
-
-        switch (pagina.type) {
-            case "actividad":
-            case "activity":
-
-                var actividad =
-                        EDGE_Plantilla.config.actividades[pagina.actividad];
-                if (isEmpty(actividad)) {
-                    console.error(pagina, "ACTIVIDAD no encontrada");
-                    return false;
-                } else {
-                    EDGE_Plantilla.debug ? console.log(actividad, "Actividad found") : false;
-                    pagina.actividad = actividad;
-                    pagina.url = actividad.url;
-                }
-
-                break;
-        }
-
-        EDGE_Plantilla.debug ? console.log(strPagina, objRetro, pagina) : false;
-
-        // Load Third Composition and inject data
-        var promise = EC.loadComposition(EDGE_Plantilla.config.default.url_pages + pagina.url,
-                sym_contenedor);
-
-        promise.done(function (comp) {
-            var stage = comp.getStage();
-            if (!isEmpty(objRetro)) {
-                $.each(objRetro, function (index, value) {
-                    var arrSymSearch = pagina.symbols[index];
-                    var symFound = buscar_sym(stage, arrSymSearch);
-                    console.log(typeof value);
-                    if (typeof value === "string") {
-                        $(symFound.ele).find("p").text(value);
-                    }
-                });
-            }
-        });
-
-    }
-
     /* El POPUP envía un evento a la plantilla informando que ya está creado 
      * y está listo para recibir su estado inicial
      */
@@ -312,12 +247,87 @@ ion.sound({
             identify: EDGE_Plantilla.popup_on_show
         });
     });
+    //</editor-fold>
 
+    function mostrar_pagina(strPagina, objRetro) {
+        //EDGE_Plantilla.config
+        var sym = EDGE_Plantilla.plantilla_sym;
+        EDGE_Plantilla.debug ? console.log(strPagina) : false;
+
+        if (!EDGE_Plantilla.config.paginas.hasOwnProperty(strPagina)) {
+            console.error(strPagina, EDGE_Plantilla.config.paginas, "PAGINA No encontrado");
+            return false;
+        }
+        var pagina = EDGE_Plantilla.config.paginas[strPagina];
+
+        var sym_contenedor = sym.getSymbol("contened_home");
+
+        EDGE_Plantilla.recurso_on_show = pagina;
+
+        if (!isEmpty(pagina.symbols)) {
+            if (!isEmpty(objRetro)) {
+                $.each(objRetro, function (index, value) {
+                    if (!pagina.symbols.hasOwnProperty(index)) {
+                        delete pagina.symbols[index];
+                    }
+                });
+            }
+        } else {
+            objRetro = null;
+        }
+
+        switch (pagina.type) {
+            case "actividad":
+            case "activity":
+
+                var actividad =
+                        EDGE_Plantilla.config.actividades[pagina.actividad];
+                if (isEmpty(actividad)) {
+                    console.error(pagina, "ACTIVIDAD no encontrada");
+                    return false;
+                } else {
+                    pagina.activity = actividad;
+                    pagina.url = actividad.url;
+                    EDGE_Plantilla.debug ? console.log(actividad, EDGE_Plantilla.config.paginas, "Actividad found") : false;
+                }
+
+                break;
+        }
+
+        EDGE_Plantilla.debug ? console.log(strPagina, objRetro, pagina) : false;
+
+        // Load Third Composition and inject data
+        var promise = EC.loadComposition(EDGE_Plantilla.config.default.url_pages + pagina.url,
+                sym_contenedor);
+
+        promise.done(function (comp) {
+            var stage = comp.getStage();
+            if (!isEmpty(objRetro)) {
+                $.each(objRetro, function (index, value) {
+                    var arrSymSearch = pagina.symbols[index];
+                    var symFound = buscar_sym(stage, arrSymSearch);
+                    console.log(typeof value);
+                    if (typeof value === "string") {
+                        $(symFound.ele).find("p").text(value);
+                    }
+                });
+            }
+        });
+
+    }
     /* El recurso envía un evento a la plantilla informando que ya está creado 
      * y está listo para recibir su estado inicial
      */
-
     $(document).on("EDGE_Plantilla_creationComplete", function (evt) {
+        var temp_pagina = EDGE_Plantilla.recurso_on_show;
+
+        switch (EDGE_Plantilla.recurso_on_show.actividad) {
+            case "drag_drop":
+                drag_drop_toscano_created(evt);
+                break;
+        }
+    });
+    function drag_drop_toscano_created(evt) {
         var sym = EDGE_Plantilla.plantilla_sym;
         var sym_contenedor = sym.getSymbol("contened_home");
 
@@ -328,37 +338,77 @@ ion.sound({
         $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger({
             type: "EDGE_Recurso_sendPreviousData",
             block: false,
-            previous_data: {"DROP_1_(Un cuadro azul)": ["DRAG_2_(bola verde)"], "DROP_2_(Un cuadro rojo)": ["DRAG_1_(bola rosada)"]},
+            previous_data: {
+                "DROP_1_(Un cuadro azul)": ["DRAG_2_(bola verde)"],
+                "DROP_2_(Un cuadro rojo)": ["DRAG_1_(bola rosada)"]
+            },
+            attempts: 0,
             sym: evt.sym,
             identify: EDGE_Plantilla.recurso_on_show
         });
-    });
+    }
 
     /* El recurso ha enviado una petición de Submit, la plantilla debe decidir
      * que hacer con este request y enviarle una respuesta para que reaccione
      */
     $(document).on("EDGE_Plantilla_submitApplied", function (evt) {
-        EDGE_Plantilla.debug ? console.log(evt) : false;
-        
+        var temp_pagina = EDGE_Plantilla.recurso_on_show;
+
+        switch (EDGE_Plantilla.recurso_on_show.actividad) {
+            case "drag_drop":
+                drag_drop_toscano_submit(evt);
+                break;
+        }
+    });
+    function drag_drop_toscano_submit(evt) {
         var sym = EDGE_Plantilla.plantilla_sym;
         var sym_contenedor = sym.getSymbol("contened_home");
+        EDGE_Plantilla.debug ? console.log(evt) : false;
 
-        var this_block = false;
-        var this_show_answers = false;
-
-        var intentos = evt.attempts + 1;
-        if (intentos >= evt.attempts_limit) {
-            this_block = true;
-            this_show_answers = true;
+        if (evt.attempts >= evt.attempts_limit) {
+            return false;
         }
 
-        $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger({
-            type: "EDGE_Recurso_postSubmitApplied",
-            block: this_block,
-            show_answers: this_show_answers,
-            attempts: intentos,
-            sym: evt.sym
+        $.each(evt.answer, function (index, value) {
+            if(isEmpty(value)){
+                mostrar_popup("med_estrella");
+                return false;
+            }
         });
-    });
+
+        var objEvt = {type: "EDGE_Recurso_postSubmitApplied", sym: evt.sym};
+
+        if (evt.results !== "incorrect") {
+            mostrar_popup("muy_bien", {mensaje: "Tu drag and drop ha sido respondido correctamente"});
+
+            objEvt = merge_options(objEvt, {
+                block: true,
+                show_answers: false,
+                attempts: evt.attempts
+            });
+
+        } else {
+            var this_block = false;
+            var this_show_answers = false;
+
+            var intentos = evt.attempts + 1;
+            if (intentos >= evt.attempts_limit) {
+                this_block = true;
+                this_show_answers = true;
+                mostrar_popup("bronce");
+            } else {
+                mostrar_popup("plata");
+            }
+
+            objEvt = merge_options(objEvt, {
+                block: this_block,
+                show_answers: this_show_answers,
+                attempts: intentos
+            });
+        }
+
+        $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger(objEvt);
+    }
+
 
 }());

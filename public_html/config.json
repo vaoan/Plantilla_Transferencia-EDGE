@@ -61,7 +61,7 @@
             }
         },
         "plata": {
-            "url": "14_retroal_edge/pop_up_Actividades/edge_lupa-plata/med_plataEdge/med-plata_edge.html",
+            "url": "14_retroal_edge/pop_up_Actividades/edge_med-plata/med_plataEdge/med-plata_edge.html",
             "type": "popup_mini",
             "symbols": {
             }
@@ -74,6 +74,18 @@
         },
         "creditos": {
             "url": "elementos_plantilla/popup_creditos/popup_creditos.html",
+            "type": "popup_full",
+            "symbols": {
+            }
+        },
+        "info":{
+            "url": "elementos_plantilla/Informacion/Informacion.html",
+            "type": "popup_full",
+            "symbols": {
+            }
+        },
+        "ayudas":{
+            "url": "elementos_plantilla/Menuayuda/Menuayuda.html",
             "type": "popup_full",
             "symbols": {
             }
