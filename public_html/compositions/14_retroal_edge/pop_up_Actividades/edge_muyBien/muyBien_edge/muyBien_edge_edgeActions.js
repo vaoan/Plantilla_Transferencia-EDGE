@@ -14,7 +14,7 @@
 
 
     })("stage");
-    //Edge symbol end:'stage'
+   //Edge symbol end:'stage'
 
     //=========================================================
 
@@ -31,7 +31,7 @@
         //Edge binding end
 
     })("muybien_cont");
-    //Edge symbol end:'muybien_cont'
+   //Edge symbol end:'muybien_cont'
 
     //=========================================================
 
@@ -48,7 +48,7 @@
         //Edge binding end
 
     })("anim_medalla");
-    //Edge symbol end:'anim_medalla'
+   //Edge symbol end:'anim_medalla'
 
     //=========================================================
 
@@ -70,7 +70,7 @@
         //Edge binding end
 
     })("mov_perp_trofeo");
-    //Edge symbol end:'mov_perp_trofeo'
+   //Edge symbol end:'mov_perp_trofeo'
 
     //=========================================================
 
@@ -87,7 +87,7 @@
         //Edge binding end
 
     })("brillitos");
-    //Edge symbol end:'brillitos'
+   //Edge symbol end:'brillitos'
 
     //=========================================================
 
@@ -102,7 +102,7 @@
         //Edge binding end
 
     })("recuad_texto");
-    //Edge symbol end:'recuad_texto'
+   //Edge symbol end:'recuad_texto'
 
     //=========================================================
 
@@ -132,7 +132,7 @@
         //Edge binding end
 
     })("trans_popup");
-    //Edge symbol end:'trans_popup'
+   //Edge symbol end:'trans_popup'
 
     //=========================================================
 
@@ -140,6 +140,22 @@
     (function (symbolName) {
 
     })("cont_btn_cerrar");
-    //Edge symbol end:'cont_btn_cerrar'
+   //Edge symbol end:'cont_btn_cerrar'
+
+   //=========================================================
+   
+   //Edge symbol: 'txt_mensaje'
+   (function(symbolName) {   
+   
+   })("txt_mensaje");
+   //Edge symbol end:'txt_mensaje'
+
+   //=========================================================
+   
+   //Edge symbol: 'titulo'
+   (function(symbolName) {   
+   
+   })("titulo");
+   //Edge symbol end:'titulo'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-29934699");

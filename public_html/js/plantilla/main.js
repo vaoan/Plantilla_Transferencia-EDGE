@@ -70,7 +70,7 @@ ion.sound({
     }
 
     $("body").on("EDGE_Container_loaded", function (evt) {
-        EDGE_Plantilla.plantilla_sym = evt.sym;        
+        EDGE_Plantilla.plantilla_sym = evt.sym;
         EDGE_Plantilla.config = getRemote().responseJSON;
         //EDGE_Plantilla.debug ? console.log(EDGE_Plantilla.config) : false;
     });
@@ -121,10 +121,20 @@ ion.sound({
         sym_contenedor.show();
 
         // Load Third Composition and inject data
-        var promise = EC.loadComposition(EDGE_Plantilla.config.default.url_pages + popup.url, sym_contenedor);
+        var promise = EC.loadComposition(EDGE_Plantilla.config.default.url_pages + popup.url,
+                sym_contenedor);
 
         promise.done(function (comp) {
             var stage = comp.getStage();
+            
+            $.each(objRetro, function (index, value) {
+                var arrSymSearch = popup.symbols[index];
+                var symFound = buscar_sym(stage, arrSymSearch);
+                console.log(typeof value)
+                if(typeof value === "string"){
+                    $(symFound.ele).find("p").text(value);
+                }
+            });
             // Set text fields in external composition
             //stage.$("title").html("EdgeDocks.com");
             //stage.$("body").html("Everything Edge: News, Tutorials, Components and much more...");
@@ -134,8 +144,18 @@ ion.sound({
 
     }
 
+    function buscar_sym(sym, arrSymSearch) {
+        var temp = sym;
+        $.each(arrSymSearch, function (index, value) {
+            EDGE_Plantilla.debug ? console.log(temp) : false;
+            temp = temp.getSymbol(value);
+        });
+        EDGE_Plantilla.debug ? console.log(temp) : false;
+        return temp;
+    }
+
     function call_pop_creditos() {
-        mostrar_popup("creditos");
+        mostrar_popup("muy_bien", {mensaje: "¡Esto está BIEN!", titulo : "Excelente"});
     }
 
     $("body").on("EDGE_Plantilla_ClickMenuTools", function (evt) {

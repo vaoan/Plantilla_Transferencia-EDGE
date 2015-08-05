@@ -11429,3 +11429,140 @@
 [0803/081419:INFO:CONSOLE(0)] "Uncaught TypeError: Cannot read property 'nodeType' of undefined", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/asegura/AppData/Local/Temp/Adobe/Edge%20Animate%206.0.0/Untitled-1/edge_includes/jquery-2.0.3.min.js (0)
 [0803/081419:INFO:CONSOLE(0)] "Uncaught TypeError: Cannot read property 'nodeType' of undefined,0", source: about:docKey-3643871 (0)
 [0803/081419:INFO:CONSOLE(0)] "Uncaught TypeError: Cannot read property 'nodeType' of undefined", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/asegura/AppData/Local/Temp/Adobe/Edge%20Animate%206.0.0/Untitled-1/edge_includes/jquery-2.0.3.min.js (0)
+[0805/123925:ERROR:gpu_info_collector_win.cc(102)] Can't retrieve a valid WinSAT assessment.
+[0805/123936:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/123936:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/123937:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/123937:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/123938:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/123938:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/123938:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/123939:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot call method 'appendChild' of undefined", source: v8/appCss (1)
+[0805/123939:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot call method 'appendChild' of undefined", source: v8/appCss (1)
+[0805/123939:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/123939:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/123947:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/123947:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/123947:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/123951:ERROR:ipc_channel_win.cc(132)] pipe error: 109
+[0805/123951:ERROR:ipc_channel_win.cc(132)] pipe error: 109
+[0805/131005:ERROR:gpu_info_collector_win.cc(102)] Can't retrieve a valid WinSAT assessment.
+[0805/131018:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/131018:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/131018:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/131019:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/131019:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/131019:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/131019:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/131021:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot call method 'appendChild' of undefined", source: v8/appCss (1)
+[0805/131021:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/131022:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/131029:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/131029:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/131029:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133811:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133811:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133811:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133811:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.d.seekInTool (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/edge.authoring.6.0.0.min.js:74:302)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:23)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133811:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.EdgeDOM.resumeCanvasOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:34:198)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:21)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133812:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.d.seekInTool (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/edge.authoring.6.0.0.min.js:74:302)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:23)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133812:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.EdgeDOM.resumeCanvasOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:34:198)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:21)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133812:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.d.seekInTool (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/edge.authoring.6.0.0.min.js:74:302)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:23)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133812:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.EdgeDOM.resumeCanvasOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:34:198)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:21)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133812:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.d.seekInTool (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/edge.authoring.6.0.0.min.js:74:302)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:23)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133812:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.EdgeDOM.resumeCanvasOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:34:198)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:21)
+    at <anonymous>:0:61", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/133835:ERROR:gpu_info_collector_win.cc(102)] Can't retrieve a valid WinSAT assessment.
+[0805/133847:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/133847:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/133847:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/133847:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/133847:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133847:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133847:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133849:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/133849:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/133857:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133857:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133857:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/133904:ERROR:ipc_channel_win.cc(132)] pipe error: 109
+[0805/133904:ERROR:ipc_channel_win.cc(405)] pipe error: 232
+[0805/134830:ERROR:gpu_info_collector_win.cc(102)] Can't retrieve a valid WinSAT assessment.
+[0805/134841:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/134841:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/134841:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/134841:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0805/134842:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134842:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134842:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134843:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot call method 'appendChild' of undefined", source: v8/appCss (1)
+[0805/134843:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/134843:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0805/134851:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134851:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134851:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134942:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134942:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134942:INFO:dhcp_proxy_script_adapter_fetcher_win.cc(264)] Error fetching PAC URL from DHCP: 2
+[0805/134942:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.d.seekInTool (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/edge.authoring.6.0.0.min.js:74:302)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:23)
+    at <anonymous>:0:59", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/134942:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.EdgeDOM.resumeCanvasOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:34:198)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:21)
+    at <anonymous>:0:59", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/134942:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.d.seekInTool (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/edge.authoring.6.0.0.min.js:74:302)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:23)
+    at <anonymous>:0:59", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/134942:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.EdgeDOM.resumeCanvasOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:34:198)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:21)
+    at <anonymous>:0:59", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/134942:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.d.seekInTool (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/edge.authoring.6.0.0.min.js:74:302)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:23)
+    at <anonymous>:0:59", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/134942:INFO:CONSOLE(48)] "TypeError: Cannot read property 'style' of undefined
+    at Object.EdgeDOM.updateOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:38:233)
+    at Object.EdgeDOM.resumeCanvasOverlay (http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js:34:198)
+    at eval (eval at <anonymous> (unknown source), <anonymous>:1:21)
+    at <anonymous>:0:59", source: http://127.0.0.1:54321/_DRIVE_C_EVIRD_/Users/heine/Documents/NetBeansProjects/Plantilla_Transferencia-EDGE/public_html/compositions/14_retroal_edge/pop_up_Actividades/edge_muyBien/muyBien_edge/edge_includes/an.canvas.overlay.min.js (48)
+[0805/134944:ERROR:ipc_channel_win.cc(132)] pipe error: 109

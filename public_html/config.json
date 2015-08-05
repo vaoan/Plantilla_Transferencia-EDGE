@@ -29,20 +29,13 @@
                 "titulo": [
                     "muybien_cont",
                     "trans_popup",
-                    "titulo",
-                    {
-                        "name": "Text2",
-                        "type": "div"
-                    }
+                    "titulo"
                 ],
                 "mensaje": [
                     "muybien_cont",
                     "trans_popup",
                     "recuad_texto",
-                    {
-                        "name": "Text",
-                        "type": "div"
-                    }
+                    "txt_mensaje"
                 ]
             }
         },
