@@ -32,7 +32,7 @@
     </organization>
   </organizations>
   <resources>
-    <resource identifier="R1" href="sco1.html" adlcp:scormType="sco" type="webcontent" xml:base="content/"></resource>
+    <resource identifier="R1" href="plantilla_transferencia.html" adlcp:scormType="sco" type="webcontent" xml:base="content/"></resource>
   </resources>
 </manifest>
 
