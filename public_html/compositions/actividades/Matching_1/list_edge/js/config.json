@@ -1,0 +1,23 @@
+{
+    "words": [
+    {
+    	"word":"palabra_a"
+    },
+    {
+    	"word":"palabra_b"
+    },
+    {
+    	"word":"palabra_c"
+    },
+    {
+    	"word":"palabra_d"
+    },
+    {
+    	"word":"palabra_x"
+    }],
+	"feedback":{
+		"type_feedback":"1",
+		"text":"this is an example text to feedback"
+	},
+	"attempts": 1
+}

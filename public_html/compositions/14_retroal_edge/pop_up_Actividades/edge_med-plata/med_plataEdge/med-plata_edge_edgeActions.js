@@ -137,7 +137,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          // introducir aquí código para clic de ratón
          // Ocultar un elemento 
          sym.getComposition().getStage().$("muybien_cont").hide();
-         
+         parent.$(parent.document).trigger({
+                type: 'EDGE_Plantilla_ClosePopup',
+                sym: sym,
+                evt: e
+            });
 
       });
       //Edge binding end

@@ -68,13 +68,13 @@ var audio = new Audio('sounds/snap.mp3');
         plantilla_sym = evt.sym;
     });
 
-    $(document).on("Edge_Plantilla_ClosePopup", function (evt) {
+    $(document).on("EDGE_Plantilla_ClosePopup", function (evt) {
         play_buttons();
         close_popup();
         console.log("close");
     });
 
-    $("body").on("EDGE_Plantilla_click", function (evt) {
+    $("body").on("EDGE_Plantilla_ClickMenuTools", function (evt) {
         console.log(evt);
         switch (evt.evt.currentTarget.id) {
             case "Stage_barra_herramientas_barra_herramientasMov_btn_fullscreen":

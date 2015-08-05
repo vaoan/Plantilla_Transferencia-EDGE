@@ -848,7 +848,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_fullscreen}", "click", function (sym, e) {
             // Fullscreen
             $("body").trigger({
-                type: "EDGE_Plantilla_click",
+                type: "EDGE_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -859,7 +859,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_creditos}", "click", function (sym, e) {
             // Popup de creditos
             $("body").trigger({
-                type: "EDGE_Plantilla_click",
+                type: "EDGE_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -870,7 +870,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_ayuda}", "click", function (sym, e) {
             //  poup ayuda
             $("body").trigger({
-                type: "EDGE_Plantilla_click",
+                type: "EDGE_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -881,7 +881,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_audio}", "click", function (sym, e) {
             // funcion de sonido
             $("body").trigger({
-                type: "EDGE_Plantilla_click",
+                type: "EDGE_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -893,7 +893,7 @@
             // Mostrar un elemento 
             // Plantilla creada
             $("body").trigger({
-                type: "EDGE_Plantilla_click",
+                type: "EDGE_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -905,7 +905,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_acces}", "click", function (sym, e) {
             // popup de accesibilidad
             $("body").trigger({
-                type: "EDGE_Plantilla_click",
+                type: "EDGE_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });

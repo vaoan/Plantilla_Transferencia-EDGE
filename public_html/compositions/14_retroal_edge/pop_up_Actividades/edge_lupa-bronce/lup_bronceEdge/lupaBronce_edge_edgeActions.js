@@ -1,217 +1,221 @@
 /***********************
-* Acciones de composición de Adobe Edge Animate
-*
-* Editar este archivo con precaución, teniendo cuidado de conservar 
-* las firmas de función y los comentarios que comienzan con "Edge" para mantener la 
-* capacidad de interactuar con estas acciones en Adobe Edge Animate
-*
-***********************/
-(function($, Edge, compId){
-var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comunes para las clases de Edge
+ * Acciones de composición de Adobe Edge Animate
+ *
+ * Editar este archivo con precaución, teniendo cuidado de conservar 
+ * las firmas de función y los comentarios que comienzan con "Edge" para mantener la 
+ * capacidad de interactuar con estas acciones en Adobe Edge Animate
+ *
+ ***********************/
+(function ($, Edge, compId) {
+    var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comunes para las clases de Edge
 
-   //Edge symbol: 'stage'
-   (function(symbolName) {
-      
-      
-   })("stage");
-   //Edge symbol end:'stage'
+    //Edge symbol: 'stage'
+    (function (symbolName) {
 
-   //=========================================================
-   
-   //Edge symbol: 'muybien_cont'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 815, function(sym, e) {
-         // introducir código aquí
-         sym.getSymbol("trans_popup").getSymbol("recuad_texto").play();
-         
-         sym.getSymbol("trans_popup").getSymbol("anim_medalla").getSymbol("mov_perp_trofeo").play();
-         
-         sym.getSymbol("trans_popup").play();
 
-      });
-      //Edge binding end
+    })("stage");
+    //Edge symbol end:'stage'
 
-   })("muybien_cont");
-   //Edge symbol end:'muybien_cont'
+    //=========================================================
 
-   //=========================================================
-   
-   //Edge symbol: 'anim_medalla'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5050, function(sym, e) {
-         // introducir código aquí
-         // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
-         // sym.play(500); o sym.play("myLabel");
-         sym.play(0);
+    //Edge symbol: 'muybien_cont'
+    (function (symbolName) {
 
-      });
-      //Edge binding end
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 815, function (sym, e) {
+            // introducir código aquí
+            sym.getSymbol("trans_popup").getSymbol("recuad_texto").play();
 
-      
+            sym.getSymbol("trans_popup").getSymbol("anim_medalla").getSymbol("mov_perp_trofeo").play();
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 807, function(sym, e) {
-         // introducir código aquí
-         sym.stop();
+            sym.getSymbol("trans_popup").play();
 
-      });
-      //Edge binding end
+        });
+        //Edge binding end
 
-   })("anim_medalla");
-   //Edge symbol end:'anim_medalla'
+    })("muybien_cont");
+    //Edge symbol end:'muybien_cont'
 
-   //=========================================================
-   
-   //Edge symbol: 'mov_perp_trofeo'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1355, function(sym, e) {
-         // introducir código aquí
-         sym.stop();
+    //=========================================================
 
-      });
-      //Edge binding end
+    //Edge symbol: 'anim_medalla'
+    (function (symbolName) {
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         // introducir código aquí
-         sym.stop();
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5050, function (sym, e) {
+            // introducir código aquí
+            // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
+            // sym.play(500); o sym.play("myLabel");
+            sym.play(0);
 
-      });
-      //Edge binding end
+        });
+        //Edge binding end
 
-   })("mov_perp_trofeo");
-   //Edge symbol end:'mov_perp_trofeo'
 
-   //=========================================================
-   
-   //Edge symbol: 'brillitos'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3625, function(sym, e) {
-         // introducir código aquí
-         // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
-         // sym.play(500); o sym.play("myLabel");
-         sym.play("repitis");
 
-      });
-      //Edge binding end
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 807, function (sym, e) {
+            // introducir código aquí
+            sym.stop();
 
-   })("brillitos");
-   //Edge symbol end:'brillitos'
+        });
+        //Edge binding end
 
-   //=========================================================
-   
-   //Edge symbol: 'recuad_texto'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         // introducir código aquí
-         sym.stop();
+    })("anim_medalla");
+    //Edge symbol end:'anim_medalla'
 
-      });
-      //Edge binding end
+    //=========================================================
 
-      
+    //Edge symbol: 'mov_perp_trofeo'
+    (function (symbolName) {
 
-      Symbol.bindElementAction(compId, symbolName, "${img-btnVerResp}", "click", function(sym, e) {
-         // evento clic para ir a contenedor de respuestas
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1355, function (sym, e) {
+            // introducir código aquí
+            sym.stop();
 
-      });
-      //Edge binding end
+        });
+        //Edge binding end
 
-   })("recuad_texto");
-   //Edge symbol end:'recuad_texto'
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function (sym, e) {
+            // introducir código aquí
+            sym.stop();
 
-   //=========================================================
-   
-   //Edge symbol: 'trans_popup'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         // introducir código aquí
-         sym.stop();
+        });
+        //Edge binding end
 
-      });
-      //Edge binding end
+    })("mov_perp_trofeo");
+    //Edge symbol end:'mov_perp_trofeo'
 
-      
+    //=========================================================
 
-      Symbol.bindElementAction(compId, symbolName, "${cont_btn_cerrar}", "click", function(sym, e) {
-         // introducir aquí código para clic de ratón
-         // Ocultar un elemento 
-         sym.getComposition().getStage().$("muybien_cont").hide();
-         
+    //Edge symbol: 'brillitos'
+    (function (symbolName) {
 
-      });
-      //Edge binding end
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3625, function (sym, e) {
+            // introducir código aquí
+            // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
+            // sym.play(500); o sym.play("myLabel");
+            sym.play("repitis");
 
-   })("trans_popup");
-   //Edge symbol end:'trans_popup'
+        });
+        //Edge binding end
 
-   //=========================================================
-   
-   //Edge symbol: 'cont_btn_cerrar'
-   (function(symbolName) {   
-   
-   })("cont_btn_cerrar");
-   //Edge symbol end:'cont_btn_cerrar'
+    })("brillitos");
+    //Edge symbol end:'brillitos'
 
-   //=========================================================
-   
-   //Edge symbol: 'brillos_mov'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
-         // introducir código aquí
-         // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
-         // sym.play(500); o sym.play("myLabel");
-         sym.play("repetir2");
+    //=========================================================
 
-      });
-      //Edge binding end
+    //Edge symbol: 'recuad_texto'
+    (function (symbolName) {
 
-   })("brillos_mov");
-   //Edge symbol end:'brillos_mov'
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function (sym, e) {
+            // introducir código aquí
+            sym.stop();
 
-   //=========================================================
-   
-   //Edge symbol: 'btn_volv-int'
-   (function(symbolName) {   
-   
-   })("btn_volv-int");
-   //Edge symbol end:'btn_volv-int'
+        });
+        //Edge binding end
 
-   //=========================================================
-   
-   //Edge symbol: 'loop_brillos'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3500, function(sym, e) {
-         // introducir código aquí
-         // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
-         // sym.play(500); o sym.play("myLabel");
-         sym.play("repetirloop");
 
-      });
-      //Edge binding end
 
-   })("loop_brillos");
-   //Edge symbol end:'loop_brillos'
+        Symbol.bindElementAction(compId, symbolName, "${img-btnVerResp}", "click", function (sym, e) {
+            // evento clic para ir a contenedor de respuestas
 
-   //=========================================================
-   
-   //Edge symbol: 'lupa_admiracion'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1271, function(sym, e) {
-         // introducir código aquí
-         sym.stop();
+        });
+        //Edge binding end
 
-      });
-      //Edge binding end
+    })("recuad_texto");
+    //Edge symbol end:'recuad_texto'
 
-   })("lupa_admiracion");
-   //Edge symbol end:'lupa_admiracion'
+    //=========================================================
+
+    //Edge symbol: 'trans_popup'
+    (function (symbolName) {
+
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function (sym, e) {
+            // introducir código aquí
+            sym.stop();
+
+        });
+        //Edge binding end
+
+
+
+        Symbol.bindElementAction(compId, symbolName, "${cont_btn_cerrar}", "click", function (sym, e) {
+            // introducir aquí código para clic de ratón
+            // Ocultar un elemento 
+            sym.getComposition().getStage().$("muybien_cont").hide();
+            parent.$(parent.document).trigger({
+                type: 'EDGE_Plantilla_ClosePopup',
+                sym: sym,
+                evt: e
+            });
+
+        });
+        //Edge binding end
+
+    })("trans_popup");
+    //Edge symbol end:'trans_popup'
+
+    //=========================================================
+
+    //Edge symbol: 'cont_btn_cerrar'
+    (function (symbolName) {
+
+    })("cont_btn_cerrar");
+    //Edge symbol end:'cont_btn_cerrar'
+
+    //=========================================================
+
+    //Edge symbol: 'brillos_mov'
+    (function (symbolName) {
+
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function (sym, e) {
+            // introducir código aquí
+            // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
+            // sym.play(500); o sym.play("myLabel");
+            sym.play("repetir2");
+
+        });
+        //Edge binding end
+
+    })("brillos_mov");
+    //Edge symbol end:'brillos_mov'
+
+    //=========================================================
+
+    //Edge symbol: 'btn_volv-int'
+    (function (symbolName) {
+
+    })("btn_volv-int");
+    //Edge symbol end:'btn_volv-int'
+
+    //=========================================================
+
+    //Edge symbol: 'loop_brillos'
+    (function (symbolName) {
+
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3500, function (sym, e) {
+            // introducir código aquí
+            // Reproducir la línea de tiempo en un momento o etiqueta específicos. Por ejemplo:
+            // sym.play(500); o sym.play("myLabel");
+            sym.play("repetirloop");
+
+        });
+        //Edge binding end
+
+    })("loop_brillos");
+    //Edge symbol end:'loop_brillos'
+
+    //=========================================================
+
+    //Edge symbol: 'lupa_admiracion'
+    (function (symbolName) {
+
+        Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1271, function (sym, e) {
+            // introducir código aquí
+            sym.stop();
+
+        });
+        //Edge binding end
+
+    })("lupa_admiracion");
+    //Edge symbol end:'lupa_admiracion'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-29934699");
