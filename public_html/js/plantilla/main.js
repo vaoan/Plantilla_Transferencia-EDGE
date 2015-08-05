@@ -68,7 +68,7 @@ var audio = new Audio('sounds/snap.mp3');
         plantilla_sym = evt.sym;
     });
 
-    $("body").on("Edge_Plantilla_ClosePopup", "iframe", function (evt) {
+    $(document).on("Edge_Plantilla_ClosePopup", function (evt) {
         play_buttons();
         close_popup();
         console.log("close");

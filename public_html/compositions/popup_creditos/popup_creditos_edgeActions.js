@@ -23,15 +23,13 @@
 
         Symbol.bindElementAction(compId, symbolName, "${cerrar}", "click", function (sym, e) {
             // introducir aquí código para clic de ratón
-            $("body").trigger({
+            parent.$(parent.document).trigger({
                 type: 'Edge_Plantilla_ClosePopup',
                 sym: sym,
                 evt: e
             });
 
-            // Ocultar un elemento 
             sym.getSymbolElement().hide();
-
 
         });
         //Edge binding end
