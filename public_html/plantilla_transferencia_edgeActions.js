@@ -201,6 +201,11 @@
         Symbol.bindElementAction(compId, symbolName, "${leyendo}", "click", function (sym, e) {
             // introducir aquí código para clic de ratón
             //sym.getSymbol("contened_apertura").play();
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
 
             // Mostrar un elemento 
             sym.getSymbol("leyendo").$("estado_borde").show();
@@ -219,6 +224,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${sol}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").show();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -235,6 +245,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${papelera}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").show();
@@ -250,6 +265,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${pensar}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -265,6 +285,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${docum}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -280,6 +305,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${hablar}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -295,6 +325,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${pdf}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -311,6 +346,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${libros}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -326,6 +366,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${libroA2}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -341,6 +386,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${mapa}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();
@@ -356,6 +406,11 @@
 
         Symbol.bindElementAction(compId, symbolName, "${home}", "click", function (sym, e) {
             // Mostrar un elemento 
+            $("body").trigger({
+                type: "EDGE_Plantilla_ClickNav",
+                sym: sym,
+                evt: e
+            });
             sym.getSymbol("leyendo").$("estado_borde").hide();
             sym.getSymbol("sol").$("estado_borde2").hide();
             sym.getSymbol("papelera").$("estado_borde3").hide();

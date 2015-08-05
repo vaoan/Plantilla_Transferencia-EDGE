@@ -75,7 +75,7 @@
             }
         },
         "creditos" : {
-            "url": "MuyBienPopup/muyBien_edge.html",
+            "url": "elementos_plantilla/popup_creditos/popup_creditos.html",
             "type" : "popup_full",
             "symbols" : {
                 

@@ -6,9 +6,14 @@
 /* global EC */
 
 //<editor-fold defaultstate="collapsed" desc="Global values">
-var play_general_sound = true;
-var plantilla_sym;
-var debug = true;
+EDGE_Plantilla = {
+    play_general_sound: true,
+    plantilla_sym: null,
+    debug: true,
+    base_audio: new Audio('sounds/snap.mp3'),
+    config: null,
+    popup_on_show: null
+};
 ion.sound({
     sounds: [
         {
@@ -28,15 +33,23 @@ ion.sound({
     path: "sounds/",
     preload: true
 });
-var audio = new Audio('sounds/snap.mp3');
 //</editor-fold>
 
 (function () {
 
+    //<editor-fold defaultstate="collapsed" desc="generic functions">
+    function getRemote() {
+        return $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: "config.json",
+            async: false
+        });
+    }
+
     function play_buttons(evt) {
-        if (play_general_sound) {
-            //ion.sound.play("snap");
-            var temp = audio.cloneNode();
+        if (EDGE_Plantilla.play_general_sound) {
+            var temp = EDGE_Plantilla.base_audio.cloneNode();
             temp.play("snap");
         }
     }
@@ -50,32 +63,84 @@ var audio = new Audio('sounds/snap.mp3');
     }
 
     function close_popup() {
-        var sym = plantilla_sym;
+        var sym = EDGE_Plantilla.plantilla_sym;
         sym.getSymbol("contenedor_popup").$("popup_contenido_2").hide();
         sym.getSymbol("contenedor_popup").$("popup_contenido_1").hide();
         sym.$("contenedor_popup").hide();
     }
 
-    function call_pop_creditos() {
-        var sym = plantilla_sym;
-        sym.$("contenedor_popup").show();
-        sym.getSymbol("contenedor_popup").$("popup_contenido_2").show();
-        EC.loadComposition("compositions/popup_creditos/popup_creditos.html",
-                sym.getSymbol("contenedor_popup").$("popup_contenido_2"));
-    }
-
     $("body").on("EDGE_Container_loaded", function (evt) {
-        plantilla_sym = evt.sym;
+        EDGE_Plantilla.plantilla_sym = evt.sym;        
+        EDGE_Plantilla.config = getRemote().responseJSON;
+        //EDGE_Plantilla.debug ? console.log(EDGE_Plantilla.config) : false;
     });
 
     $(document).on("EDGE_Plantilla_ClosePopup", function (evt) {
         play_buttons();
         close_popup();
-        console.log("close");
+        EDGE_Plantilla.debug ? console.log("close") : false;
+        EDGE_Plantilla.popup_on_show = null;
     });
+    //</editor-fold>
+
+    function mostrar_popup(strPopup, objRetro) {
+        //EDGE_Plantilla.config
+        var sym = EDGE_Plantilla.plantilla_sym;
+        if (!EDGE_Plantilla.config.popups.hasOwnProperty(strPopup)) {
+            console.error(strPopup, EDGE_Plantilla.config.popup, "POPUP No encontrado");
+            return false;
+        }
+        var popup = EDGE_Plantilla.config.popups[strPopup];
+
+        var sym_contenedor;
+
+        switch (popup.type) {
+            case "popup_mini":
+                sym_contenedor = sym.getSymbol("contenedor_popup").$("popup_contenido_2");
+                break;
+            case "popup_full":
+                sym_contenedor = sym.getSymbol("contenedor_popup").$("popup_contenido_2");
+                break;
+            default:
+                console.error(popup.type, "POPUP tipo incorrecto");
+                return false;
+                break;
+        }
+
+        EDGE_Plantilla.popup_on_show = popup;
+
+        if (!isEmpty(objRetro)) {
+            $.each(objRetro, function (index, value) {
+                if (!popup.symbols.hasOwnProperty(index)) {
+                    delete popup.symbols[index];
+                }
+            });
+        }
+
+        sym.$("contenedor_popup").show();
+        sym_contenedor.show();
+
+        // Load Third Composition and inject data
+        var promise = EC.loadComposition(EDGE_Plantilla.config.default.url_pages + popup.url, sym_contenedor);
+
+        promise.done(function (comp) {
+            var stage = comp.getStage();
+            // Set text fields in external composition
+            //stage.$("title").html("EdgeDocks.com");
+            //stage.$("body").html("Everything Edge: News, Tutorials, Components and much more...");
+            // Listen for events dispatched by the external composition
+            // stage.$("btn").click(function () { sym.play(); });
+        });
+
+    }
+
+    function call_pop_creditos() {
+        mostrar_popup("creditos");
+    }
 
     $("body").on("EDGE_Plantilla_ClickMenuTools", function (evt) {
-        console.log(evt);
+        EDGE_Plantilla.debug ? console.log(evt) : false;
+        EDGE_Plantilla.debug ? console.log(evt.evt.currentTarget.id) : false;
         switch (evt.evt.currentTarget.id) {
             case "Stage_barra_herramientas_barra_herramientasMov_btn_fullscreen":
                 fullscreen();
@@ -86,7 +151,7 @@ var audio = new Audio('sounds/snap.mp3');
             case "Stage_barra_herramientas_barra_herramientasMov_btn_ayudas":
                 break;
             case "Stage_barra_herramientas_barra_herramientasMov_btn_audio":
-                play_general_sound = !play_general_sound;
+                EDGE_Plantilla.play_general_sound = !EDGE_Plantilla.play_general_sound;
                 break;
             case "Stage_barra_herramientas_barra_herramientasMov_btn_info":
                 break;
@@ -97,5 +162,33 @@ var audio = new Audio('sounds/snap.mp3');
         play_buttons(evt);
     });
 
-
+    $("body").on("EDGE_Plantilla_ClickNav", function (evt) {
+        EDGE_Plantilla.debug ? console.log(evt) : false;
+        EDGE_Plantilla.debug ? console.log(evt.evt.currentTarget.id) : false;
+        switch (evt.evt.currentTarget.id) {
+            case "Stage_home":
+                break;
+            case "Stage_libros":
+                break;
+            case "Stage_libroA2":
+                break;
+            case "Stage_mapa":
+                break;
+            case "Stage_leyendo":
+                break;
+            case "Stage_sol":
+                break;
+            case "Stage_papelera":
+                break;
+            case "Stage_pensar":
+                break;
+            case "Stage_docum":
+                break;
+            case "Stage_hablar":
+                break;
+            case "Stage_pdf":
+                break;
+        }
+        play_buttons(evt);
+    });
 }());
