@@ -6,5 +6,7 @@
 
 
 (function () {
-    
+    $("body").on("EDGE_PopUp_CreationResponse", function (evt) {
+        console.log("response");
+    });
 }());

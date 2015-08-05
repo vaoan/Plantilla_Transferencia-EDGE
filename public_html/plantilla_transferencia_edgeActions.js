@@ -202,7 +202,7 @@
             // introducir aquí código para clic de ratón
             //sym.getSymbol("contened_apertura").play();
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -225,7 +225,7 @@
         Symbol.bindElementAction(compId, symbolName, "${sol}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -246,7 +246,7 @@
         Symbol.bindElementAction(compId, symbolName, "${papelera}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -266,7 +266,7 @@
         Symbol.bindElementAction(compId, symbolName, "${pensar}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -286,7 +286,7 @@
         Symbol.bindElementAction(compId, symbolName, "${docum}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -306,7 +306,7 @@
         Symbol.bindElementAction(compId, symbolName, "${hablar}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -326,7 +326,7 @@
         Symbol.bindElementAction(compId, symbolName, "${pdf}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -347,7 +347,7 @@
         Symbol.bindElementAction(compId, symbolName, "${libros}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -367,7 +367,7 @@
         Symbol.bindElementAction(compId, symbolName, "${libroA2}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -387,7 +387,7 @@
         Symbol.bindElementAction(compId, symbolName, "${mapa}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -407,7 +407,7 @@
         Symbol.bindElementAction(compId, symbolName, "${home}", "click", function (sym, e) {
             // Mostrar un elemento 
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickNav",
+                type: "EDGE_Self_Plantilla_ClickNav",
                 sym: sym,
                 evt: e
             });
@@ -903,7 +903,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_fullscreen}", "click", function (sym, e) {
             // Fullscreen
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickMenuTools",
+                type: "EDGE_Self_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -914,7 +914,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_creditos}", "click", function (sym, e) {
             // Popup de creditos
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickMenuTools",
+                type: "EDGE_Self_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -925,7 +925,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_ayuda}", "click", function (sym, e) {
             //  poup ayuda
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickMenuTools",
+                type: "EDGE_Self_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -936,7 +936,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_audio}", "click", function (sym, e) {
             // funcion de sonido
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickMenuTools",
+                type: "EDGE_Self_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -948,7 +948,7 @@
             // Mostrar un elemento 
             // Plantilla creada
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickMenuTools",
+                type: "EDGE_Self_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });
@@ -960,7 +960,7 @@
         Symbol.bindElementAction(compId, symbolName, "${btn_acces}", "click", function (sym, e) {
             // popup de accesibilidad
             $("body").trigger({
-                type: "EDGE_Plantilla_ClickMenuTools",
+                type: "EDGE_Self_Plantilla_ClickMenuTools",
                 sym: sym,
                 evt: e
             });

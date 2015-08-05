@@ -13,8 +13,20 @@
     (function (symbolName) {
 
 
+        Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function (sym, e) {
+            // Insertar código para ejecutarse cuando el símbolo se crea aquí
+            console.log("send");
+            parent.$(parent.document).trigger({
+                type: 'EDGE_Plantilla_CreationComplete',
+                sym: sym,
+                evt: e
+            });
+            
+        });
+        //Edge binding end
+
     })("stage");
-   //Edge symbol end:'stage'
+    //Edge symbol end:'stage'
 
     //=========================================================
 
@@ -46,7 +58,7 @@
         //Edge binding end
 
     })("popup_creditos");
-   //Edge symbol end:'popup_creditos'
+    //Edge symbol end:'popup_creditos'
 
     //=========================================================
 
@@ -54,7 +66,7 @@
     (function (symbolName) {
 
     })("titulo_creditos");
-   //Edge symbol end:'titulo_creditos'
+    //Edge symbol end:'titulo_creditos'
 
     //=========================================================
 
@@ -69,7 +81,7 @@
         //Edge binding end
 
     })("creditos");
-   //Edge symbol end:'creditos'
+    //Edge symbol end:'creditos'
 
     //=========================================================
 
@@ -77,7 +89,7 @@
     (function (symbolName) {
 
     })("banner_superior");
-   //Edge symbol end:'banner_superior'
+    //Edge symbol end:'banner_superior'
 
     //=========================================================
 
@@ -85,6 +97,6 @@
     (function (symbolName) {
 
     })("falsob_boton");
-   //Edge symbol end:'falsob_boton'
+    //Edge symbol end:'falsob_boton'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-35468122");
