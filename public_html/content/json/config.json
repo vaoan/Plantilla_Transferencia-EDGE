@@ -31,7 +31,7 @@
             "necesita_datos_externos": true
         },
         "drag_drop": {
-            "url": "actividades/drag_drop2/drag_drop2.html",
+            "url": "actividades/EDGE_DragAndDrop1To1-master/drag_drop2.html",
             "necesita_datos_externos": false
         },
         "drag_drop_many": {

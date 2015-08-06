@@ -370,6 +370,7 @@ ion.sound({
     function drag_drop_toscano_submit(evt) {
         var sym = EDGE_Plantilla.plantilla_sym;
         var sym_contenedor = sym.getSymbol("contened_home");
+        var is_empty = false;
         EDGE_Plantilla.debug ? console.log(evt) : false;
 
         if (evt.attempts >= evt.attempts_limit) {
@@ -377,11 +378,17 @@ ion.sound({
         }
 
         $.each(evt.answer, function (index, value) {
+            //console.log(isEmpty(value));
             if (isEmpty(value)) {
                 mostrar_popup("med_estrella");
+                is_empty = true;
                 return false;
             }
         });
+        
+        if(is_empty){
+            return false;
+        }
 
         var objEvt = {type: "EDGE_Recurso_postSubmitApplied", sym: evt.sym};
 
