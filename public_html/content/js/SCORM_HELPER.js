@@ -208,10 +208,10 @@ function CHANGE_LOCATION(location) {
 
 function LOAD_INTERACTIONS() {
     $.ajax({
-        url: "content/json/interactions.json"
+        url: "../content/json/interactions.json"
     }).done(function (data) {
         SCORM_HELP.interactions = data;
-        $.event.trigger({
+        $(document).event.trigger({
             type: "loadedInteractions"
         });
     });
