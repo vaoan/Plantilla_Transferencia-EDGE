@@ -326,6 +326,9 @@ ion.sound({
             case "drag_drop":
                 drag_drop_toscano_created(evt);
                 break;
+            case "drag_drop_many":
+                drag_drop_toscano_created(evt);
+                break;
         }
     });
     function drag_drop_toscano_created(evt) {
@@ -357,6 +360,9 @@ ion.sound({
 
         switch (EDGE_Plantilla.recurso_on_show.actividad) {
             case "drag_drop":
+                drag_drop_toscano_submit(evt);
+                break;
+            case "drag_drop_many":
                 drag_drop_toscano_submit(evt);
                 break;
         }
