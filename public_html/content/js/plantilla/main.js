@@ -43,7 +43,7 @@ ion.sound({
         return $.ajax({
             type: "GET",
             dataType: "json",
-            url: "config.json",
+            url: "json/config.json",
             async: false
         });
     }
@@ -148,6 +148,7 @@ ion.sound({
             case "Stage_hablar":
                 break;
             case "Stage_pdf":
+                mostrar_pagina("3");
                 break;
         }
         play_buttons(evt);
@@ -370,7 +371,7 @@ ion.sound({
         }
 
         $.each(evt.answer, function (index, value) {
-            if(isEmpty(value)){
+            if (isEmpty(value)) {
                 mostrar_popup("med_estrella");
                 return false;
             }

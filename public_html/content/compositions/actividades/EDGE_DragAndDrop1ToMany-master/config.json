@@ -1,0 +1,28 @@
+{
+    "num_intentos": 2,
+    "tipo": "uno a muchos",
+    "drags": {
+        "1": {
+            "descripcion": "bola rosada"
+        },
+        "2": {
+            "descripcion": "bola verde"
+        },
+		"3": {
+            "descripcion": "bola naranja"
+        },
+		"4": {
+            "descripcion": "bola celeste"
+        }
+    },
+    "drops": {
+        "1": {
+            "descripcion": "cuadro rojo",
+            "accepted": ["1","3","4"]
+        },
+        "2": {
+            "descripcion": "cuadro azul",
+            "accepted": ["2"]
+        }
+    }
+}

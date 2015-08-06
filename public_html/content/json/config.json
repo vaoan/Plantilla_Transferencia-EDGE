@@ -18,6 +18,11 @@
             "type" : "actividad",
             "recurso": "3",
             "actividad" : "drag_drop"
+        },
+        "3" :{
+            "type" : "actividad",
+            "recurso": "3",
+            "actividad" : "drag_drop_many"
         }
     },
     "actividades": {
@@ -27,6 +32,10 @@
         },
         "drag_drop": {
             "url": "actividades/drag_drop2/drag_drop2.html",
+            "necesita_datos_externos": false
+        },
+        "drag_drop_many": {
+            "url": "actividades/EDGE_DragAndDrop1ToMany-master/drag_drop2.html",
             "necesita_datos_externos": false
         }
     },
