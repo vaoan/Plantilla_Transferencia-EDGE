@@ -14,7 +14,7 @@ $(window).load(function () {
 });
 
 $(window).unload(function () {
-    SCORM_TERMINATE();
+    //SCORM_TERMINATE();
 });
 
 $(document).on('loadedInteractions', function (e) {
